@@ -10,11 +10,11 @@ body {
   padding: 10px;
   margin: 0;
   background-color: lightgray;
-  /* margin: 10px; */
+
   text-align: center;
 
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  /* font-style: italic; */
+
   font-weight: 100;
   font-variant-ligatures: normal;
   font-size: 1rem;
@@ -31,12 +31,20 @@ button {
   font-size: medium;
   font-family: Arial, sans-serif;
 }
-h1 {
+.logo {
   color: rgb(54, 194, 54);
 }
+/* .cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+} */
 .nav-bar {
   width: 100%;
-  display: flex;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
   align-items: center;
   background: linear-gradient(
     45deg,
@@ -44,5 +52,36 @@ h1 {
     rgb(249, 252, 249),
     rgb(255, 255, 255)
   );
-  justify-content: space-around;
+}
+.nav-link {
+  padding: 1rem;
+}
+.nav-link li {
+  padding: 0.7rem;
+  list-style: none;
+  display: inline-block;
+}
+.nav-link li a {
+  color: rgb(0, 0, 0);
+}
+.nav-link a:hover {
+  letter-spacing: 1px;
+  color: greenyellow;
+
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  .nav-bar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .nav-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .nav-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
