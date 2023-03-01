@@ -108,9 +108,29 @@ button {
   background-color: darkgrey;
   height: 50%;
   width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
+.cards {
+  background-color: aquamarine;
+  grid-column: 2 / span 4;
+  border: 1px solid orange;
+}
+
+.swiper {
+  display: flex;
+  width: 963px;
+  height: 360px;
+  background-color: antiquewhite;
+}
+.swiper-slide img {
+  width: 965px;
+  height: 100%;
+}
+
 .container {
   display: grid;
   width: 80%;
