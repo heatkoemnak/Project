@@ -80,16 +80,23 @@ button {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+.ground {
+  background-color: darkgrey;
+  height: 50%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 .container {
   display: grid;
   width: 80%;
 
   margin: 0 auto;
 
-  background-color: rgb(239, 239, 239);
+  background-color: white;
 }
 .materials {
+  margin-top: 10px;
   text-align: center;
 }
 .materials a {
@@ -138,23 +145,23 @@ button {
   }
 }
 .fa-image {
-  width: 130px;
-  height: 130px;
+  border-radius: 8px;
+  width: 110px;
+  height: 120px;
 }
 .types {
-  display: grid;
+  display: flex;
+  /* display: grid; */
   width: 80%;
   /* margin: auto; */
-  margin: 0 auto;
 
-  /* background-color: rgb(226, 226, 226); */
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 10px;
   font-size: smaller;
   font-family: Arial, sans-serif;
 }
-.seemore-pro2 {
-  margin-bottom: 5px;
-  justify-self: end;
+/* .seemore-pro2 {
 }
 .seemore-pro1 {
-  margin-top: 5px;
-}
+} */
