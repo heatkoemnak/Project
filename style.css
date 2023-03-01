@@ -20,6 +20,22 @@ body {
   font-size: 1rem;
   letter-spacing: 1px;
 }
+.btum {
+  height: 60px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  text-align: center;
+
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+
+  font-weight: 100;
+  font-variant-ligatures: normal;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
 li,
 a,
 h2,
