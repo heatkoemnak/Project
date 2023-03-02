@@ -120,14 +120,17 @@ button {
   border: 1px solid orange;
 }
 
-.swiper {
+/* .swiper {
   display: flex;
   width: 963px;
   height: 360px;
   background-color: antiquewhite;
+} */
+.swiper {
+  background-color: aqua;
 }
 .swiper-slide img {
-  width: 965px;
+  width: 971px;
   height: 100%;
 }
 
@@ -206,7 +209,35 @@ button {
   font-size: smaller;
   font-family: Arial, sans-serif;
 }
-/* .seemore-pro2 {
+.read-more-state {
+  display: none;
 }
-.seemore-pro1 {
-} */
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+.read-more-state:checked ~ .container.read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+  content: "Show more";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less";
+}
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+}
