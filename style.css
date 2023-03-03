@@ -117,8 +117,20 @@ button {
   /* text-align: center; */
 }
 .feature {
-  background-color: #4f9199;
+  background-color: #b0e48d;
   /* margin-right: 15px; */
+}
+.feature-list {
+  margin: 5px;
+  background-color: #90d640;
+  padding: 15px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
+    rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
+  border-bottom: 0;
+  border-radius: 8px;
+}
+.feature-list a {
+  color: rgb(222, 255, 228);
 }
 .cards {
   /* background-color: aquamarine; */
@@ -131,8 +143,6 @@ button {
   text-align: center;
   overflow: hidden;
   height: 368px;
-  /* height: 400px;
-  width: 1000px; */
 
   margin: 0 auto;
 }
@@ -164,7 +174,7 @@ button {
 }
 
 .slide:nth-child(4) {
-  background: #d9d055;
+  background: #cdcbac;
 }
 
 .slide-number {
@@ -273,13 +283,125 @@ button {
 
 .types {
   display: flex;
-  /* display: grid; */
   width: 80%;
-  /* margin: auto; */
-
   margin: 0 auto;
   justify-content: space-between;
   padding: 10px;
   font-size: smaller;
   font-family: Arial, sans-serif;
+}
+.see-more-trigger {
+  background-color: rgb(238, 238, 238);
+  height: 20px;
+  border-radius: 2px;
+  /* padding-top: 1px; */
+  padding: 0 2px;
+}
+.Card {
+  background-color: #ffffff;
+  border: 1px solid #037e8c;
+}
+.popular-card {
+  margin: 10px;
+  border-radius: 8px;
+  /* display: flex; */
+  width: 200px;
+  height: 200px;
+}
+.detail {
+  color: white;
+  align-self: end;
+  font-size: small;
+  padding: 20px;
+}
+.img-card {
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 3px 0px,
+    rgba(255, 255, 255, 0.25) 0px 3px 0px inset;
+  width: 200px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  height: 150px;
+}
+
+.popular-card:nth-child(1) {
+  background: #d93b65;
+}
+
+.popular-card:nth-child(2) {
+  background: #037e8c;
+}
+
+.popular-card:nth-child(3) {
+  background: #36bf66;
+}
+
+.popular-card:nth-child(4) {
+  background: #cdcbac;
+}
+.popular-card:nth-child(5) {
+  background: #3a5d61;
+}
+
+.popular-card:nth-child(6) {
+  background: #418459;
+}
+
+.popular-card:nth-child(7) {
+  background: #76745a;
+}
+.popular-card:nth-child(8) {
+  background: #42e0f2;
+}
+
+.popular-card:nth-child(9) {
+  background: #69746d;
+}
+
+.popular-card:nth-child(10) {
+  background: #ffee00;
+}
+.Card {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 10px;
+  font-size: smaller;
+  font-family: Arial, sans-serif;
+}
+
+@media (min-width: 400px) {
+  .Card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .Card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .Card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .Card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .Card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1300px) {
+  .Card {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
