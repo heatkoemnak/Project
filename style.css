@@ -299,7 +299,8 @@ button {
 }
 .Card {
   background-color: #ffffff;
-  border: 1px solid #037e8c;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
+    rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
 }
 .popular-card {
   margin: 10px;
@@ -359,6 +360,15 @@ button {
 
 .popular-card:nth-child(10) {
   background: #ffee00;
+}
+.popular-card:nth-child(11) {
+  background: #ff9b36;
+}
+.popular-card:nth-child(11) {
+  background: #e12222;
+}
+.popular-card:nth-child(11) {
+  background: #1f160e;
 }
 .Card {
   display: grid;
