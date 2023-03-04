@@ -1,16 +1,21 @@
 .background {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
-  height: 80vh;
-  align-items: center;
+  height: 90vh;
+  place-items: center;
   margin: 0 auto;
   background-color: rgb(243, 255, 251);
 }
 .profile {
   border-radius: 9px;
-  margin: auto 0;
+
   /* display: flex; */
   width: 300px;
   height: 300px;
   background-color: rgb(181, 192, 188);
+}
+.img {
+  width: 300px;
+  height: 200px;
 }
