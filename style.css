@@ -156,7 +156,11 @@ button {
   height: 368px;
   width: 1000px;
 }
-.img {
+/* .img {
+  height: 368px;
+  width: 1000px;
+} */
+.image {
   height: 368px;
   width: 1000px;
 }
@@ -180,7 +184,7 @@ button {
 .slide-number {
   color: #000;
   place-items: center;
-  /* text-align: center; */
+
   font-size: 10em;
 }
 
@@ -211,7 +215,7 @@ button {
   display: grid;
   width: 85%;
 
-  margin: 0 auto;
+  margin: 10px auto;
 
   background-color: white;
 }
