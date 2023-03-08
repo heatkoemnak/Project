@@ -1,6 +1,6 @@
 .background {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
   height: 90vh;
   place-items: center;
@@ -11,9 +11,24 @@
   border-radius: 9px;
 
   /* display: flex; */
-  width: 300px;
+  width: 250px;
   height: 300px;
   background-color: rgb(181, 192, 188);
+}
+.profile:nth-child(1){
+  background-color: aquamarine;
+}
+.profile:nth-child(2){
+  background-color: rgb(188, 244, 85);
+}
+.profile:nth-child(3){
+  background-color: rgb(127, 255, 127);
+}
+.profile:nth-child(4){
+  background-color: rgb(111, 140, 130);
+}
+.profile:nth-child(5){
+  background-color: rgb(178, 235, 216);
 }
 .img {
   width: 300px;
