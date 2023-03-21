@@ -43,7 +43,7 @@ a:hover {
   color: #e73700;
 }
 h2 {
-  
+
   margin-bottom: 48px;
   padding-bottom: 16px;
   font-size: 20px;
@@ -58,8 +58,32 @@ h3 {
   line-height: 36px;
 }
 .group{
+  
   display: flex;
   background-color: aliceblue;
+  
+}
+.item{
+  align-items: center;
+  padding: 20px;
+  background-color: aqua;
+}
+
+.imge-soheak{
+  width: 280px;
+  height: 330px;
+}
+.imge-many{
+  width: 280px;
+  height: 330px;
+}
+.imge-koemnak{
+  width: 280px;
+  height: 330px;
+}
+.imge-dana{
+  width: 300px;
+  height: 330px;
 }
 
 
