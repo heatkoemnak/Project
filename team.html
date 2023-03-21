@@ -1,54 +1,73 @@
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="team.css" />
-  </head>
-  <body>
-    <h3 class="top">RECYCLING WEBSITE</h3>
-    <nav class="nav-bar" id="mynav-bar">
-      <div class="nav-link">
-        <h1 class="logo">Anti WastE</h1>
-      </div>
-      <div class="nav-link">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Team</a></li>
-        </ul>
-      </div>
-      <div class="nav-link">
-        <input type="text" placeholder="Search.." />
-        <a class="cta" href="#">Login</a>
-        <a href="#"><i class="fa fa-user"></i></a>
-      </div>
-    </nav>
-    <div class="background">
-      <div class="profile">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team</title>
+  <link rel="stylesheet" href="team.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+  <section class="game-section">
+    <h2 class="line-title">trending games</h2>
+    <div class="group">
       
-        <span>SAING SOPHEAK</span>
+      <div class="item">
+        <img src="asset/sodana.jpg" alt="Sodana">
+        <div class="item-desc">
+          <h3>SOM SODANA</h3>
+          <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="profile">
-      
-        <span>HEAT KOEMNAK</span>
+      <div class="item" >
+        <img src="asset/sopheak.jpg" alt="Sopheak">
+        <div class="item-desc">
+          <h3>SIANG SOPHEAK</h3>
+          <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
+            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="profile">
-      
-        <span>SOM SODANA</span>
+      <div class="item">
+
+        <div class="item-desc">
+          <h3>SOU MANY</h3>
+          <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
+            for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
-      <div class="profile">
-      
-        <span>SRUN CHHAYLIN</span>
-      </div>
-      <div class="profile">
-      
-        <span>SU MANY</span>
+      <div class="item" style="background-image: url(https://ucarecdn.com/ed548880-32e4-42af-9d4e-632623903256/farcry5.jpg);">
+        <div class="item-desc">
+          <h3>SRUN CHAYLIN</h3>
+          <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
+            which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+        </div>
       </div>
     </div>
-  </body>
+    </div>
+    
+  </section>
+  <script>
+    $(".custom-carousel").owlCarousel({
+  autoWidth: true,
+  loop: true
+});
+$(document).ready(function () {
+  $(".custom-carousel .item").click(function () {
+    $(".custom-carousel .item").not($(this)).removeClass("active");
+    $(this).toggleClass("active");
+  });
+});
+  </script>
+  
+
+
+  
+</body>
 </html>
+
+

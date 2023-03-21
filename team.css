@@ -1,36 +1,70 @@
-.background {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
-  height: 90vh;
-  place-items: center;
-  margin: 0 auto;
-  background-color: rgb(243, 255, 251);
-}
-.profile {
-  border-radius: 9px;
+@charset "utf-8";
 
-  /* display: flex; */
-  width: 250px;
-  height: 300px;
-  background-color: rgb(181, 192, 188);
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+
+  margin: 0px;
+  padding: 0px;
+
 }
-.profile:nth-child(1){
-  background-color: aquamarine;
+body {
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
 }
-.profile:nth-child(2){
-  background-color: rgb(188, 244, 85);
+
+.clear {
+  clear: both;
 }
-.profile:nth-child(3){
-  background-color: rgb(127, 255, 127);
+
+img {
+  max-width: 100%;
+  border: 0px;
 }
-.profile:nth-child(4){
-  background-color: rgb(111, 140, 130);
+
+ul,ol {
+  list-style: none;
 }
-.profile:nth-child(5){
-  background-color: rgb(178, 235, 216);
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
 }
-.img {
-  width: 300px;
-  height: 200px;
+
+a:hover {
+  color: #e73700;
 }
+h2 {
+  
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+.group{
+  display: flex;
+  background-color: aliceblue;
+}
+
+
+
+
+
+
+
