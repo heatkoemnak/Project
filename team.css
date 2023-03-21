@@ -90,6 +90,7 @@ h3 {
 .imge{
   width: 350px;
   height: 390px;
+  border-radius: 8px;
 }
 
 @media (min-width: 400px) {
