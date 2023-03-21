@@ -18,14 +18,7 @@ body {
 
 }
 
-.clear {
-  clear: both;
-}
 
-img {
-  max-width: 100%;
-  border: 0px;
-}
 
 ul,ol {
   list-style: none;
@@ -38,35 +31,28 @@ a {
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
-
-a:hover {
-  color: #e73700;
+.line-title{
+  background-color: antiquewhite;
 }
 h2 {
 
-  margin-bottom: 48px;
-  padding-bottom: 16px;
+
+
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   position: relative;
   text-transform: capitalize;
+  
+ 
 }
 h3 {
-  margin: 0 0 10px;
-  font-size: 28px;
-  line-height: 36px;
   color: #fff;
 }
-.group{
-  padding: 10px 230px;
-  display: grid;
-  background-color: rgb(16, 38, 58);
-  
-}
+
 .item{
-  display: flex;
-  
+
+  width: 250px;
   padding: 20px;
   background: linear-gradient(
     45deg,
@@ -78,57 +64,68 @@ h3 {
 .item-desc{
   padding: 30px;
 }
-/* 
-.imge-soheak{
-  width: 280px;
-  height: 330px;
-}
-.imge-many{
-  width: 280px;
-  height: 330px;
-} */
-.imge{
-  width: 350px;
-  height: 390px;
-  border-radius: 8px;
-}
+
+
 
 @media (min-width: 400px) {
-  .item {
+  .group {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (min-width: 600px) {
-  .item {
+  .group {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 800px) {
-  .item {
+  .group {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 900px) {
-  .item {
+  .group {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1000px) {
-  .item {
+  .group {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1200px) {
-  .item {
+  .group {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1300px) {
-  .Card {
+  .group {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
+.group {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+  background-image: linear-gradient(-45deg, yellow 0%, green 25%, yellow 51%, green 100%);
+  -webkit-animation: AnimateBG 30s ease infinite;
+          animation: AnimateBG 30s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 
 
