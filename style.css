@@ -347,10 +347,7 @@ span{
   /* padding-top: 1px; */
   padding: 0 2px;
 }
-.Card {
-  background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
-}
+
 .popular-card {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 10px;
@@ -364,7 +361,7 @@ span{
 }
 
 .detail {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); 
   align-self: end;
   font-size: small;
 }
