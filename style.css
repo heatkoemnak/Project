@@ -102,7 +102,7 @@ button {
   color: rgb(0, 0, 0);
 }
 .nav-link .item:hover {
-  
+ 
   color: greenyellow;
   font-size: large;
   transition: calc(0.4s);
@@ -256,9 +256,10 @@ span{
   height: 120px;
 }
 .fa-image:hover {
-  text-transform: 0.5s;
-  width: 120px;
-  height: 120px;
+  transition: calc(0.5s);
+  padding: 5px;
+  
+  
 }
 
 
@@ -360,7 +361,7 @@ background-color: #ffffff;
   height: 150px;
 }
 .popular-card:hover .img-card {
-  height: 160px;
+  padding: 10px;
   transition: calc(0.3s);
 }
 @media (min-width: 400px) {
