@@ -171,6 +171,9 @@ iframe {
   margin-top: 10px;
   width: 100px;
   border-radius: 8px;
+
+
+  
   height: 100px;
   border: 3px solid rgb(181, 175, 175);
 }
@@ -346,7 +349,7 @@ span{
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding: 10px;
-
+background-color: #ffffff;
   font-size: smaller;
   font-family: Arial, sans-serif;
 }
@@ -355,6 +358,10 @@ span{
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
   height: 150px;
+}
+.popular-card:hover .img-card {
+  height: 160px;
+  transition: calc(0.3s);
 }
 @media (min-width: 400px) {
   .Card {
