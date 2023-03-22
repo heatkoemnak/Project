@@ -278,6 +278,7 @@ span{
   border-radius: 8px;
   /* display: flex; */
   width: 200px;
+  background-color: #ffffff;
   height: auto;
 }
 .descript {
@@ -310,39 +311,7 @@ span{
   font-size: smaller;
   color: #ffffff;
 }
-.popular-card:nth-child(1) {
-  background: #ffffff;
-}
 
-.popular-card:nth-child(2) {
-  background: #eefdff;
-}
-
-.popular-card:nth-child(3) {
-  background: #c0e6cd;
-}
-
-.popular-card:nth-child(4) {
-  background: #cdcbac;
-}
-.popular-card:nth-child(5) {
-  background: #efefef;
-}
-
-.popular-card:nth-child(6) {
-  background: #cde8d6;
-}
-
-.popular-card:nth-child(7) {
-  background: #fffff8;
-}
-.popular-card:nth-child(8) {
-  background: #42e0f2;
-}
-
-.popular-card:nth-child(9) {
-  background: #b5ffd0;
-}
 
 .Card {
   display: grid;
