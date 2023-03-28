@@ -31,14 +31,12 @@ body {
   font-size: 1rem;
   letter-spacing: 1px;
 }
-
 li,
 a,
 h2,
 button {
   list-style: none;
   color: rgb(114, 186, 5);
-
   text-decoration: none;
   font-size: large;
   /* font-family: Arial, sans-serif; */
@@ -75,11 +73,8 @@ button {
   padding: 7px;
   border-radius:60px;
   border: .5px solid rgb(140, 137, 137);
-
-  
 }
 .shopping-cart {
-
   margin-right: 20px;
 
   width: 20px;
@@ -91,6 +86,7 @@ button {
   border-radius: 50%;
 }
 .fa-user{
+  height: 32px;
   color: #eefdff;
 }
 .nav-link li {
@@ -235,10 +231,8 @@ span{
 }
 
 .waste-type > div {
- 
   padding: 15px;
   text-align: center;
-  
 }
 .waste-type > div a {
   /* background-color: #c1b961; */
@@ -299,20 +293,19 @@ span{
   align-items: center;
   display: flex;
   justify-content: space-between;
+  
 }
 .price>a{
   margin-left: 5px;
 }
-
 .add_to_card{
+  cursor: pointer;
   border-radius: 4px;
   padding: 5px;
   background-color: rgb(237, 55, 113);
   font-size: smaller;
   color: #ffffff;
 }
-
-
 .Card {
   display: grid;
   width: 80%;
