@@ -147,29 +147,37 @@ button {
     grid-template-columns: repeat(2, 1fr);
     }
     }
-
-
-
 @media (min-width: 900px) {
   .nav-bar {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-
-
 .ground {
- 
-  height: 50%;
+  height: 55%;
   width: 80%;
+  margin: 0 auto;
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fffdfd;
+
+
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
     rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
-  margin: 0 auto;
-  /* text-align: center; */
+  border-bottom: 0;
+ 
+  
+
 }
 .feature {
+ 
   border: 1px solid white;
   background: linear-gradient(
     45deg,
@@ -189,19 +197,28 @@ button {
   border-radius: 8px;
 }
 .locate{
+  margin: 5px;
+  background-color: #90d640;
+
+
   
   display: flex;
 }
 .feature-list a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+
   
   color: rgb(255, 255, 255);
 }
 .feature-list a:hover {
-  text-transform: uppercase;
+
+  color: rgb(236, 240, 27);
+  transition: calc(0.4s);
   
-  
-  color: rgb(255, 255, 255);
-}
+  }
+
 iframe {
   margin-top: 10px;
   width: 100px;
@@ -213,80 +230,148 @@ iframe {
   border: 3px solid rgb(181, 175, 175);
 }
 span{
+
   margin: 10px 10px;
   font-size: medium;
   color: white;
+
 }
 
 #cards {
+
   position: relative;
-  height: 360px;
   width: 951px;
+  height: 376px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+
+
+ 
 }
 #cards > *{animation: 15s autoplay2 infinite linear;
+
   position: absolute; top: 0; left: 0; opacity: 0.0}
+  #cards > *:nth-child(1) {animation-delay: 0s}
+  #cards > *:nth-child(2) {animation-delay: 15s}
+  #cards > *:nth-child(3) {animation-delay: 30s}
+
 
   @keyframes autoplay2 {
     0% {opacity: 0.0}
-    4% {opacity: 1.0}
-    33.33% {opacity: 1.0}
-    37.33% {opacity: 0.0}
-    100% {opacity: 0.0}
+    5% {opacity: 1.0}
+    25% {opacity: 1.0}
+    30% {opacity: 0.0}
+    100% {opacity: 0.0
+
+    
   }
+}
 .image {
+
   height: 376px;
   width: 951px;
+  
 }
-#cards > *:nth-child(1) {animation-delay: 0s}
-#cards > *:nth-child(2) {animation-delay: 15s}
-#cards > *:nth-child(3) {animation-delay: 30s}
+
 .types {
+
   padding: 1.5rem 0;
   display: grid;
   width: 100%;
   margin: 0 auto;
   font-size: smaller;
   font-family: Arial, sans-serif;
+
+
+
+
+
   
 }
 .seemore-pro1 {
-  font-size: medium;
-  padding: 0.5rem 1rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 1rem;
+
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
+    rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
+    border-bottom: 0;
+    }
+
+
 .waste-type {
+
+
   display: grid;
+
   
   width: 80%;
   grid-template-rows: 1;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   margin: 0 auto;
-
-  background: linear-gradient(
-    45deg,
-    rgb(175, 255, 193),
-    rgb(249, 252, 249),
-    rgb(184, 255, 169)
-  );
-}
-
-.waste-type > div {
-  padding: 15px;
+  grid-gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fffdfd;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
   text-align: center;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
+    rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
+    border-bottom: 0;
+    
+
+
+ 
 }
+
+
 .waste-type > div a {
-  /* background-color: #c1b961; */
 
+
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #90d640;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
   text-align: center;
-
-  /* background-color: #d9d055; */
   color: black;
   font-size: small;
 }
 .fa-image {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 8px;
+  height: 100px;
   width: 100px;
-  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgb(181, 175, 175);
+
+  padding: 5px;
+  margin: 0 auto;
+  display: flex;
+
+  transition: calc(0.5s);
+  padding: 5px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+ 
+
 }
 .fa-image:hover {
   transition: calc(0.5s);
