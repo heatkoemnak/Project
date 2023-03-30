@@ -1,4 +1,4 @@
-function signin(){
-    window.open("login.html");
+function cancel(){
+    window.open("index.html");
   }
   
