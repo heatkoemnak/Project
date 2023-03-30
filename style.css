@@ -86,7 +86,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .nav-link input[type=text]{
   width: 200px;
@@ -137,6 +137,20 @@ button {
   transition: calc(0.4s);
   
 }
+.cta{
+  background-color: #90d640;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  font-variant-ligatures: normal;
+  font-family: "Trebuchet MS";
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+
+}
 @media (min-width: 600px) {
 
   .nav-bar {
@@ -164,7 +178,7 @@ button {
   grid-gap: 20px;
   padding: 10px;
   margin: 0 auto;
-  background-color: #fffdfd;
+  background-color: #80807f;
 
 
   transition: all 0.4s ease-in-out;
@@ -189,6 +203,7 @@ button {
   );
   /* margin-right: 15px; */
 }
+
 .feature-list {
   margin: 5px;
   background-color: #90d640;
@@ -284,6 +299,7 @@ span{
   margin: 0 auto;
   font-size: smaller;
   font-family: Arial, sans-serif;
+
 
 
 
@@ -492,9 +508,8 @@ span{
 
   display: grid;
   grid-gap: 20px;
-
+background-color: #efffdc;
   width: 80%;
-
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 1;
@@ -579,3 +594,4 @@ span{
   justify-content: space-between;
   
 }
+
