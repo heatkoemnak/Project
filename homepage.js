@@ -1,5 +1,12 @@
-function Product(){
-    const product = document.getElementById("our_products");
-    product.style.display="block";
-  }
+function Products(){
   
+    return(
+        <div>
+            <h1>Products</h1>
+
+            <ProductList />
+
+        </div>
+        )
+
+}
