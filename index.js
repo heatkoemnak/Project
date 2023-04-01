@@ -1,4 +1,4 @@
-
+//!Open team page
 function Team() {
   window.open("team.html");
 }
@@ -9,6 +9,10 @@ function login(){
 function signup(){
   window.open("signup.html");
 }
+function homepage(){
+  window.open("homepage.html");
+}
+//!slide show 
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
   
   // Apply to all slideshows that you define with the markup wrote
@@ -34,6 +38,5 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
     }, time);
   }
-
 
 
