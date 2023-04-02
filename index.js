@@ -38,8 +38,8 @@ var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 
     }, time);
   }
-  function Product(){
-    window.open("homepage.html");
+  function home(){
+    window.open("home.html");
   }
 
 

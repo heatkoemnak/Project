@@ -31,19 +31,25 @@ body{
         margin: auto;
         }
     .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
         display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 20px 100px;
             font-family: "Trebuchet MS";
-            /* background: linear-gradient(
+           /* background: linear-gradient(
                 45deg,
                 rgb(225, 247, 24),
                 rgb(240, 255, 100),
                 rgb(225, 247, 24)
-              ); */    
+              );   */
 
         }
+
         .logo{
             cursor: pointer;
             font-style: oblique;
@@ -175,8 +181,9 @@ body{
 
 }.row{
     display: flex;
-background-color: #f3eb02;
+background-color: #ffffff;
     flex-direction: column;
+    gap: 5px;
 }
 .row img{
     width: 300px;
@@ -189,10 +196,67 @@ background-color: #f3eb02;
 
 }
 .product-text {
+    
     display: flex;
     justify-content: space-between;
+    padding:0 .5rem;
     
 }
+.price{
+    display: flex;
+    justify-content: space-between;
+    padding:0 .5rem;
+}
+.price i{
+    background-color: rgb(154, 204, 80);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    right: -3px;
+    top: -5px;
+}
+/* our service */
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
+    width: 100%;
+
+
+    
+
+}.service h1{
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid rgb(255, 227, 47);
+
+}.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20 auto;
+   
+}.service-container.row{
+
+    display: flex;
+    background-color: #ffffff;
+}
+        
+    .service-container.row p{
+        width: 50%;
+        padding: 0 1rem;
+
+
+    }
+
+
+
+
+
+
+
 
 
 
