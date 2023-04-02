@@ -67,8 +67,6 @@ body{
             justify-content: center;
             flex: 1;
             text-align: center;
-
-
         }
         #Menu-Items li{
             padding: 0 20px;
@@ -78,6 +76,7 @@ body{
 
         }
         #Menu-Items li a{
+            letter-spacing: 2px;
             text-decoration: none;
             font-size:20px ;
             color: #ffffff;
