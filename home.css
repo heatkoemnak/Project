@@ -118,7 +118,7 @@ body{
         padding: 30px;
     }.banner-text h1{
         font-style: oblique;
-        color: #f3c702;
+        color: #ffffff;
         font-size: 50px;
         font-weight: 700;
         font-family: "Trebuchet MS";
@@ -184,6 +184,7 @@ body{
 background-color: #ffffff;
     flex-direction: column;
     gap: 5px;
+    
 }
 .row img{
     width: 300px;
@@ -206,6 +207,7 @@ background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding:0 .5rem;
+    width: 300px;
 }
 .price i{
     background-color: rgb(154, 204, 80);
@@ -217,39 +219,50 @@ background-color: #ffffff;
     top: -5px;
 }
 /* our service */
-.service{
+.Service{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
+   
+    margin: auto;
     width: 100%;
 
 
     
-
-}.service h1{
+}.Service h1{
     text-align: center;
     padding: 30px;
     border-bottom: 1px solid rgb(255, 227, 47);
 
 }.service-container{
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 20 auto;
-   
-}.service-container.row{
+    gap: 20px;
+    
 
+}.service-row{
     display: flex;
-    background-color: #ffffff;
+background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 400px;
+    height: 650px;
+    
+}.service-row img{
+    width: 400px;
+    height: 350px;
+    
 }
-        
-    .service-container.row p{
-        width: 50%;
-        padding: 0 1rem;
+.service-row img:hover{
+    transform: scale(1.01);
+    transition: all .42 ease;
 
-
-    }
+}
 
 
 
