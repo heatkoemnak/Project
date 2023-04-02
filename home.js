@@ -1,4 +1,22 @@
+function menu(){
+    const menu =document.getElementById("Menu-Items");
+    const close =document.getElementById("Menu-Items");
+    menu.style.display="Block" ;
+    menu.style.transition="all 0.5s ease-in-out";
+    menu.style.position="absolute";
+    menu.style.top="55px";
+    menu.style.left="0px";
+    menu.style.right="10px";
+    menu.style.backgroundColor="#32681b" ;
+    menu.style.width="100%";
+    menu.style.padding="20px";
+    menu.style.textAlign="left";
+    menu.style.margin="10px";
 
+
+   
+
+}
 function back() {
     window.open("index.html")
     
