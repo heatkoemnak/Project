@@ -180,13 +180,18 @@ background-color: #f3eb02;
 }
 .row img{
     width: 300px;
-    height: 300px;
+    height: 350px;
     
 }
 .row img:hover{
     transform: scale(1.01);
     transition: all .42 ease;
 
+}
+.product-text {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
