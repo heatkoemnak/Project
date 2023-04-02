@@ -12,6 +12,9 @@ function signup(){
 function homepage(){
   window.open("homepage.html");
 }
+
+
+
 //!slide show 
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
   
