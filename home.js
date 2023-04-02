@@ -1,8 +1,6 @@
 
-function product() {
-    const product = document.getElementById("product");
-    product.display
-
+function back() {
+    window.open("index.html")
     
 }
 $(document).ready(function(){
@@ -17,7 +15,7 @@ $(document).ready(function(){
         var hash = this.hash;
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html','product-container','Service').animate({
+        $('html','container','product-container','Service').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
           // Add hash (#) to URL when done scrolling (default click behavior)
