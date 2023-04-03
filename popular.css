@@ -20,7 +20,7 @@
     font-size: 1.2rem;
     background-color: #ffffff;
 }.popular-text span{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
     border-bottom: 2px solid rgb(255, 208, 0);
     padding-bottom: 3px;
@@ -43,6 +43,7 @@
 }.Product img:hover{
     transform: scale(1.01);
     transition: all .42 ease;
+   
 }
 .product-container{
     display: flex;
