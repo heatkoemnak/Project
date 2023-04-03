@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://www.flaticon.com/uicons" />
     <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="popular.css">
+    <link rel="stylesheet" href="trending.css">
+    <link rel="stylesheet" href="mobile-resonsive.css">
 
     <link
       rel="stylesheet"
@@ -35,12 +36,13 @@
           <li><a onclick="Team()" class="item">Team</a></li>
         </ul>
       </div>
-      <div class="nav-link">
+      <div class="nav-link" id="nav-icon">
         <a href="#">
           <img class="shopping-cart" src="asset/shopping-cart (1).png"alt="shopping-cart"/></a>
-        <input type="text" placeholder="Search.." />
-        <a class="cta"onclick="login()">Login </a>
-        <i class="fa fa-user"></i>
+          <a href="#" class="fa-serach"><i class='bx bx-search'></i></a>
+        <input id="search" type="text" placeholder="Search.." />
+        <a class="cta" id ="cta"onclick="login()">Login </a>
+        <i class="fa fa-user" id="account"></i>
        
       </div>
     </nav>
@@ -321,6 +323,10 @@
       <div class="popular-card">
         <img class="img-card" src="asset/04.webp" alt="matals" />
         <div class="descript">
+          <div class="product-Name">
+            <h3> Product Name</h3>
+           
+          </div>
           <a class="detail" href="#"
             >2023 New Arrival Men T-Shirt Blank Color,T-Shirt Durable New Design
           </a>
@@ -383,10 +389,10 @@
         </div>
       </div>
     </div>
-    <div class="Products">
-      <div>
-        <a href="#">Populars</a>
-        
+    <div class="Popular">
+      <div class="popular-text">
+        <a href="#">Popular Products</a>
+        <a class="seemore" href="#">See more</a>
       </div>
     </div>
     <div class="Products">
