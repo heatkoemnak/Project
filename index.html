@@ -13,39 +13,40 @@
     <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="trending.css">
     <link rel="stylesheet" href="mobile-resonsive.css">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
+    <link rel="stylesheet" href="Shopping Card/shopping-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
   </head>
   <body>
     <h3 class="header">RECYCLING WEBSITE</h3>
     <!-- navagation bar -->
+
     <nav class="nav-bar" id="mynav-bar">
-      <div class="nav-link">
-        <h1 class="logo">Anti WastE</h1>
+      <h1 class="logo">Anti WastE</h1>
+      <div class="nav-menu">
+        <li><a href="#home" onclick="home()" class="item">Home</a></li>
+        <li><a href="#Service"onclick="Service()" class="item">Services</a></li>
+        <li><a href="#product"onclick="Product()" class="item">Products</a></li>
+        <li><a onclick="contact()"  class="item">Contact us</a></li>
+        <li><a onclick="Team()" class="item">Team</a></li>
+        
       </div>
-      <div class="nav-link">
-        <ul>
-          <li><a onclick="home()" class="item">Home</a></li>
-          <li><a onclick="Service()" class="item">Services</a></li>
-          <li><a onclick="Product()" class="item">Products</a></li>
-          <li><a onclick="contact()"  class="item">Contact us</a></li>
-          <li><a onclick="Team()" class="item">Team</a></li>
-        </ul>
-      </div>
-      <div class="nav-link" id="nav-icon">
-        <a href="#">
-          <img class="shopping-cart" src="asset/shopping-cart (1).png"alt="shopping-cart"/></a>
-          <a href="#" class="fa-serach"><i class='bx bx-search'></i></a>
+      <div class="nav-icon" id="nav-icon">
+        <i class='bx bxs-cart-alt' id="shopping-cart" onclick="ShowCart() "></i>
         <input id="search" type="text" placeholder="Search.." />
-        <a class="cta" id ="cta"onclick="login()">Login </a>
-        <i class="fa fa-user" id="account"></i>
-       
+        <a class="login" id ="cta"onclick="login()">Login </a>
+        <i class="fas fa-user" id ="account"></i>
       </div>
     </nav>
+    <div id="cart"class="cart">
+      <h2>Order List</h2>
+      <div class="list-product">
+        <ul id="cart-items"></ul>
+       
+      </div>
+     
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
     <!-- slide show and feature -->
 
     <div class="campagn">
@@ -79,7 +80,7 @@
             <img src="asset/s003.png" alt="">
           </div>
           <div class="slide">
-            <img src="asset/s008.png" alt="">
+            <img src="asset/s007.png" alt="">
           </div>
           
         </div>
@@ -127,7 +128,7 @@
     </div>
     <!-- close slid type -->
     <!-- popular product -->
-    <div class="Popular">
+    <div class="Popular" id="popular">
       <div class="popular-text">
         <a href="#"><span>Trending</span>Products</a>
         
@@ -136,14 +137,14 @@
     </div>
     <!-- close popular product -->
     <!-- product -->
-    <div class="Product">
+    <div class="Product" id ="product">
       <div class="product-container" id="product-container">
         <div class="product-info" id="product-info">
           <img src="asset/clothes/clothes1.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name" >Jacket Suit</h3>
+              <p class="price">$10.00</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -155,7 +156,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart' data-name="Jacket Suit"  data-price="10.00"></i>
             </div>
           </div>
           
@@ -165,8 +166,8 @@
           <img src="asset/clothes/clothes2.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Weather Jiut</h3>
+              <p class="price">$20.0</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -178,7 +179,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Weather Jiut"  data-price="20.00"> </i>
             </div>
           </div>
         </div>
@@ -186,8 +187,8 @@
           <img src="asset/clothes/clothes3.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Luvist tuon</h3>
+              <p class="price">$50.0</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -199,7 +200,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Luvist tuon"  data-price="50.00"></i>
             </div>
           </div>
         </div>
@@ -207,8 +208,8 @@
           <img src="asset/clothes/clothes2.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Sweather Jack</h3>
+              <p class="price">60.0$</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -220,7 +221,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Sweather Jack"  data-price="60.00"></i>
             </div>
           </div>
         </div>
@@ -228,8 +229,8 @@
           <img src="asset/clothes/clothes3.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Jecket Treamvelet</h3>
+              <p class="price">150.0$</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -241,7 +242,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Jecket Treamvelet"  data-price="150.00"></i>
             </div>
           </div>
         </div>
@@ -249,8 +250,8 @@
           <img src="asset/clothes/clothes2.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Mini Luvis</h3>
+              <p class="price">80.0$</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -262,7 +263,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Mini Luvis"  data-price="80.00"></i>
             </div>
           </div>
         </div>
@@ -271,8 +272,8 @@
           <img src="asset/clothes/clothes2.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Li Maton</h3>
+              <p class="price">60.0$</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -284,7 +285,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Li Maton"  data-price="90.00"></i>
             </div>
           </div>
         </div>
@@ -292,8 +293,8 @@
           <img src="asset/clothes/clothes4.jpg" alt="">
           <div class="product-text">
             <div class="name-price">
-              <h3 class="product-name">Jacket Suit</h3>
-              <p class="price">0.0$</p>
+              <h3 class="product-name">Luvis Jecket</h3>
+              <p class="price">30.0$</p>
 
             </div>
             <p class="description">Product Description  dverbgern erhehtr erehge</p>
@@ -305,7 +306,7 @@
                 <i class='bx bx-star'></i>
                 <i class='bx bxs-star-half' ></i>
               </div>
-              <i class='bx bx-shopping-bag'></i>
+              <i class='bx bx-shopping-bag add-to-cart ' data-name="Luvis Jecket"  data-price="30.00"></i>
             </div>
           </div>
         </div>
@@ -543,5 +544,6 @@
      
     </h3>
     <script src="index.js"></script>
+    <script src="Shopping Card/shopping-cart.js"></script>
   </body>
 </html>

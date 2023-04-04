@@ -4,15 +4,16 @@
   padding: 0;
 
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Trebuchet MS";
   background-color: #f5f5f5;
 
  
 }
-.fa-serach{
-  display: none;
-}
+
 .header {
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -46,6 +47,13 @@ body {
   border: none;
   cursor: pointer;
 }
+:root{
+  --primary-color: #2edf28;
+  --secondary-color: #ffffff;
+  --tertiary-color: #000000;
+
+
+}
 li,
 a,
 h2,
@@ -62,103 +70,86 @@ button {
 }
 .logo {
   font-style: oblique;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  font-family: "Trebuchet MS";
-  color: rgb(54, 194, 54);
+cursor: pointer;
+  color: var(--primary-color);
+
 }
 
 .nav-bar {
-  
-  width: 100%;
-  margin: 0 auto;
   position: sticky;
   top: 0;
-  display: grid;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  font-family: "Trebuchet MS";
-  font-size: large;
+  padding: 1rem 4rem;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
   background: linear-gradient(
     45deg,
-    rgb(225, 247, 24),
-    rgb(240, 255, 100),
-    rgb(225, 247, 24)
+    rgb(239, 239, 236),
+    rgb(252, 252, 252),
+    rgb(236, 233, 233)
   );
 }
-.nav-link {
+.nav-menu{
+  display: flex;
+
+}
+.nav-menu li{
+  cursor: pointer;
+  padding: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+
+}
+.nav-menu li:hover{
+  color: var(--primary-color);
+  transition: none;
+
+}
+.nav-icon {
   cursor: pointer;
   display: flex;
-  justify-content: space-around;
+  gap:20px;
+
   align-items: center;
-  padding: 1.5rem;
+  justify-content: center;
+ 
+}.nav-icon #shopping-cart{
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  background-color:var(--secondary-color);
+  border-radius: 3px;
+  padding: 2px;
+
 }
-.nav-link input[type=text]{
-  width: 200px;
-  height: 30px;
-  border-radius: 15px;
-  border: 1px solid #6b6d6d;
+.nav-icon input[type="text"]{
+
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 3px;
   padding: 5px;
-
-  margin-right: 10px;
-  
-
-
-
-  
-}
-.shopping-cart {
-  margin-right: 20px;
-  background-color: #cacfcf;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-}
-.fa{
-  background-color: #6b6d6d;
-  padding: 9px;
-  border-radius: 50%;
-}
-.fa-user{
-  height: 32px;
-  color: #eefdff;
-}
-.nav-link li {
-
-  padding: 0.7rem;
-  list-style: none;
-  display: inline-block;
-  
-}
-.nav-link .item {
+  font-size: 1rem;
+}.nav-icon #account{
 
   color: rgb(0, 0, 0);
-  font-size: large;
+  background-color:var(--secondary-color);
+  border-radius: 50px;
+  padding:10px;
+}.nav-icon .login{
+  color: var(--secondary-color);
+  background-color: #2edf28;
+  padding: 5px;
+  border-radius: 3px;
 }
-.nav-link .item:hover {
-  color: rgb(255, 255, 255);
-  font-size: large;
-  transition: calc(0.4s);
-  
-}
-.cta{
-  background-color: #90d640;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 100;
-  font-variant-ligatures: normal;
-  font-family: "Trebuchet MS";
-  margin-right: 10px;
-  border: none;
-  cursor: pointer;
 
-}
-@media (min-width: 600px) {
+
+
+
+/* @media (min-width: 600px) {
 
   .nav-bar {
     grid-template-columns: repeat(1, 1fr);
@@ -174,7 +165,7 @@ button {
   .nav-bar {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 
 .campagn {
   
