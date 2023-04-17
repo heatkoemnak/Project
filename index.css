@@ -146,27 +146,6 @@ cursor: pointer;
   border-radius: 3px;
 }
 
-
-
-
-/* @media (min-width: 600px) {
-
-  .nav-bar {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-}
-@media (min-width: 768px) {
-  .nav-bar {
-    grid-template-columns: repeat(2, 1fr);
-    }
-    }
-@media (min-width: 900px) {
-  .nav-bar {
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
-
 .campagn {
   
   

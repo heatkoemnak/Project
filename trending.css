@@ -28,19 +28,19 @@
     
 
 }
-.Product{
+.Trending-Products{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
     margin: auto;
     width: 80%;
 }
-.Product img{
+.Trending-Products img{
     cursor: pointer;
     width: 282px;
     height: 300px;
     margin: 0 auto;
 
-}.Product img:hover{
+}.Trending-Products img:hover{
     transform: scale(1.01);
     transition: all .42 ease;
    
