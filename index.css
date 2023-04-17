@@ -462,7 +462,7 @@ span{
   cursor: pointer;
   font-size: smaller;
   font-family: Arial, sans-serif;
-  background-color: #90d640;
+  
   
 }
 .img-card {
@@ -492,7 +492,7 @@ span{
 
   
 }
-/* @media (min-width: 400px) {
+@media (min-width: 400px) {
 
   .Products {
     grid-template-columns: repeat(1, 1fr);
@@ -529,6 +529,6 @@ span{
   .Products {
     grid-template-columns: repeat(5, 1fr);
   }
-} */
+}
 
 
