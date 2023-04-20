@@ -10,6 +10,7 @@
     padding: 10px 0 0;
 
 
+
 }.popular-text{
     display: flex;
     width: 100%;
@@ -39,25 +40,31 @@
     width: 282px;
     height: 300px;
     margin: 0 auto;
+  
+  
+   
 
 }.Product img:hover{
     transform: scale(1.01);
     transition: all .42 ease;
+    
    
 }
 .product-container{
     display: flex;
-
+   
     flex-wrap: wrap;
     width: 100%;
     gap: 29px;
 }.product-info{
     cursor: pointer;
+   
     width: 282px;
     background-color: rgb(255, 255, 255);
    
 }.product-text {
     padding: .5rem;
+    
     
 }.name-price{
     display: flex;
