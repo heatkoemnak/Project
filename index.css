@@ -241,19 +241,31 @@ span{
 
 
 .Materails {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+ gap: 50px;
+  margin: 0 auto;
+
   padding: 10px;
-  margin: 0 auto;
+
   width: 80%;
-  margin: 0 auto;
-  font-size: smaller;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+
+
+
+
 
 }
-.waste-type {
+.meterail-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+/* .waste-type {
 
 
   display: grid;
@@ -277,7 +289,7 @@ span{
 
 
  
-}
+} */
 .waste-title{
   font-size: 1.2rem;
   font-weight: 600;
@@ -302,11 +314,7 @@ span{
   
 }
 
-
-
-
-
-.waste-type > div a {
+/* .waste-type > div a {
   text-transform:lowercase;
   font-size: 1.2rem;
   
@@ -314,7 +322,7 @@ span{
   padding: 5px;
 
 
-}
+} */
 .fa-image {
   height: 100px;
   width: 100px;
@@ -332,10 +340,6 @@ span{
   justify-content: center;
   align-items: center;
   
-  
-
- 
-
 }
 .fa-image:hover {
   transform: scale(1.1);
@@ -353,183 +357,9 @@ span{
  
 
 }
-.popular-card {
-  display: grid;
-  width: 90%;
-  grid-template-rows: 1;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  margin: 0 auto;
-  grid-gap: 10px;
-  padding: 5px;
-  margin: 0 auto;
-  background-color: #ebede5;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  text-align: center;
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 2px 0px,
-    rgba(255, 255, 255, 0.25) 0px 2px 0px inset;
-    border-bottom: 0;
-    border-radius: 10px;
-    margin-bottom: 20px;
-   
-    
-
-  
-
-  
-}
-.descript {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-
- 
-  border-radius: 10px;
-
-  font-size: small;
-  font-family: Arial, sans-serif;
-  font-weight: 600;
-
-  border-radius: 8px
 
 
 
-
-}
-
-.detail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  align-self: end;
-  font-size: small;
-}
-
-.add_card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-
-
-  border-radius: 10px;
-  width: 10px;
-  height: 10px;
-}
-.price{
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  
-}
-.price>a{
-  
-  font-size: 1.2rem;
-  font-weight: 600;
-
-  margin-left: 5px;
-  text-decoration: none;
-  text-transform: uppercase;
- 
-
-
-}
-.add_to_card{
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 5px;
-  background-color: rgb(237, 55, 113);
-  font-size: smaller;
-  color: #ffffff;
-}
-.Products {
-
-  display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
-    margin: auto;
-    width: 80%;
-  margin: 0 auto;
-
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  font-size: smaller;
-  font-family: Arial, sans-serif;
-  
-  
-}
-.img-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 200px;
-  height: 220px;
-  border-radius: 10px;
-
-  
-}
-.popular-card:hover .img-card {
-  transform: scale(1.1);
-  transition: calc(0.5s);
-  padding: 2px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgb(181, 175, 175);
-
-  background-color: #90d640;
-  color: white;
-  cursor: pointer;
-
-  
-}
-@media (min-width: 400px) {
-
-  .Products {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (min-width: 600px) {
-
-  .Products {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  
-  .Products {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 900px) {
-  .Products {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1000px) {
-  .Products {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 1200px) {
-  .Products {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 1300px) {
-  .Products {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
 .footer-container{
   display: flex;
   justify-content: center;
