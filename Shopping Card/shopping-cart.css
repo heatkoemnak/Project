@@ -8,15 +8,14 @@ body{
 
 }
 .cart{
-  position: absolute;
-  right: 0;
-
-  z-index: 999;
-  background-color: #fff;
-  width: 400px;
   position: fixed;
-  display: flex;
-  flex-direction: column;
+  right: -300px;
+  top: 10.4rem;
+  width: 300px;
+  background-color: #fff;
+  z-index: 999;
+  transition: 0.5s;
+  
 
 }
 .cart h3{
@@ -24,6 +23,11 @@ body{
   padding: 10px;
   background-color: #f1f1f1;
   border-bottom: 1px solid #ccc;
+}
+.cart.active{
+  right: 0;
+  transition: 0.5s;
+
 }
 .cart-content{
   
@@ -60,7 +64,7 @@ body{
   color: #fff;
   padding: 5px;
   border-radius: 4px;
-  margin-left: 140px;
+  margin-left: 90px;
   
 }
 .close-cart{
@@ -78,7 +82,10 @@ justify-content:end;
 }
 .total-price{
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
   padding: 10px;
   font-weight: 700;
   font-size: 1.2em;
@@ -86,13 +93,14 @@ justify-content:end;
 .checkout{
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
   padding: 10px;
-  background-color: #5ecd4b;
-  color: #fff;
   font-weight: 700;
   font-size: 1.2em;
+  background-color: #f44343;
+  border:none;
   cursor: pointer;
-  border: none;
+  color: #ffffff;
+  
 }
 
