@@ -97,10 +97,20 @@ justify-content:end;
   padding: 10px;
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #f44343;
+  
+  
+}
+.checkout-btn{
   border:none;
   cursor: pointer;
   color: #ffffff;
+  background-color: #ee0a0a;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 700;
   
+
+  
+
 }
 
