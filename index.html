@@ -54,23 +54,48 @@
       </div>
     </nav>
     <!-- shoping cart -->
+    <!-- cartItem.innerHTML -->
+
     <div class="cart active">
+
+
       <i class='bx bx-x close-cart' id="cart-close"></i>
       
       <h3>Your Cart</h3>
+      <!-- cart content -->
+
       <div class="cart-content">
-        <img src="asset/clothes/clothes1.jpg" alt="" class="cart-img" />
-        <div class="cart-product-info">
-          <div class="cart-product-name">Jacket Suit</div>
-          <div class="cart-product-price">$10</div>
-          <div class="cart-quantity">
-            <i class='bx bx-minus'></i>
-            <input type="number" value="1" class="quantity">
-            <i class='bx bx-plus'></i>
+        <!-- cart item -->
+        <div class="cart-item">
+          <img src="asset/clothes/clothes1.jpg" alt="" class="product-image" />
+          <div class="cart-product-info">
+            <div class="product-title">Jacket Suit</div>
+            <div class="product-price">$10</div>
+            <div class="cart-quantity">
+              <i class='bx bx-minus minus'></i>
+              <input type="number" value="1" class="quantity">
+              <i class='bx bx-plus plus'></i>
+            </div>
           </div>
+          <i class='bx bx-trash-alt remove-item'></i>
         </div>
-        <i class='bx bx-trash-alt remove-item'></i>
+        <!-- cart item -->
+        <div class="cart-item">
+          <img src="asset/clothes/clothes1.jpg" alt="" class="product-image" />
+          <div class="cart-product-info">
+            <div class="product-title">Jacket Suit</div>
+            <div class="product-price">$10</div>
+            <div class="cart-quantity">
+              <i class='bx bx-minus minus'></i>
+              <input type="number" value="1" class="quantity">
+              <i class='bx bx-plus plus'></i>
+            </div>
+          </div>
+          <i class='bx bx-trash-alt remove-item'></i>
+        </div>
+        
       </div>
+      
       <!-- total price -->
       <div class="total-price">
         <div class="total-price-text">Total</div>
@@ -82,13 +107,6 @@
         <button class="checkout-btn">Checkout</button>
       </div>
     
-
-
-
-
-
-
-      
     </div>
     <!-- slide show and feature -->
 
@@ -405,7 +423,7 @@
       </div>
     </div>
 
-    <div class="Popular-Product">
+    <div class="Popular-Product" id="product2">
       <div class="Popular-Product-container">
         <div class="Popular-Product-info">
           <img src="asset/04.webp" alt="" />

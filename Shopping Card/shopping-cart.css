@@ -9,9 +9,9 @@ body{
 }
 .cart{
   position: fixed;
-  right: -400px;
+  right: -450px;
   top: 10.4rem;
-  width: 400px;
+  width:450px;
   background-color: #fff;
   z-index: 999;
   transition: 0.5s;
@@ -43,45 +43,107 @@ body{
     cursor: pointer;
   }
 .cart-content{
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ee0a0a #f1f1f1;
+  
+  
+
+
+}
+.cart-item{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   border-bottom: 1px solid #ccc;
-
-
+  margin-bottom: 10px;
 }
 .cart-product-info{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
-  margin-right: 150px;
+  align-items: center;
+  width: 100%;
+
+  
 
 }
-.cart .cart-img{
+.cart .product-image{
   width: 80px;
-  height: 80px;
+  height: 70px;
   object-fit: cover;
+  border-radius: 2px;
+ 
 
   
 }
-.cart-product-name{
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
-.quantity{
-  width: 2em;
-  height: 2em;
-  border: 1px solid #ccc;
-  text-align: center;
-  border-radius: 4px;
-
-}
-.cart-product-price{
+.product-title{
   font-weight: 500;
   font-size: 1.1em;
+  margin-left: 10px;
+  width: 100%;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  
+
+  
+}
+
+.cart-quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  margin-right: 40px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #000000;
+  text-transform: capitalize;
+  
+
+}
+.quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #000000;
+  text-transform: capitalize;
+  
+
+}
+.bx-minus{
+ 
+  color: #ee0a0a;
+  cursor: pointer;
+
+}
+.bx-plus{
+ 
+  color: #ee0a0a;
+  cursor: pointer;
+
+}
+.product-price{
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-left: 10px;
+  width: 100%;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  
 }
 
 
@@ -102,13 +164,14 @@ body{
 
 .total-price{
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin-right: 10px;
   padding: 10px;
-  font-weight: 500;
-  font-size: 1.1em;
+  font-weight: 700;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+ 
 }
 .checkout{
   display: flex;
