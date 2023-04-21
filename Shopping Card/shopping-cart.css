@@ -30,26 +30,29 @@ body{
 
 }
 .cart-content{
-  
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
-  gap: 10px;
   border-bottom: 1px solid #ccc;
-}
 
-.cart .cart-img{
-  width: 100px;
-  height: 100px;
+
 }
 .cart-product-info{
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  justify-content: space-between;
   gap: 10px;
 
-  justify-content: space-around;
 }
+.cart .cart-img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+
+  
+}
+
 .quantity{
   width: 2em;
   height: 2em;
@@ -57,15 +60,6 @@ body{
   text-align: center;
   border-radius: 4px;
 
-}
-.bx.bx-trash{
-  cursor: pointer;
-  background-color: #ee0a0a;
-  color: #fff;
-  padding: 5px;
-  border-radius: 4px;
-  margin-left: 90px;
-  
 }
 .close-cart{
 display: flex;
