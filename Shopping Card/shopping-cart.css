@@ -29,6 +29,19 @@ body{
   transition: 0.5s;
 
 }
+.close-cart{
+  display: flex;
+  justify-content:end;
+    right: 0;
+    top:10;
+    background-color: #ccc;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #291e1e;
+    padding: 2px;
+  
+    cursor: pointer;
+  }
 .cart-content{
   display: flex;
   justify-content: space-between;
@@ -66,19 +79,27 @@ body{
   border-radius: 4px;
 
 }
-.close-cart{
-display: flex;
-justify-content:end;
-  right: 0;
-  top:10;
-  background-color: #ccc;
-  font-weight: 700;
-  font-size: 1.5em;
-  color: #291e1e;
-  padding: 5px;
+.cart-product-price{
+  font-weight: 500;
+  font-size: 1.1em;
+}
 
+
+/* remove item  */
+.bx-trash-alt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 3px;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #ee0a0a;
+  border-radius: 4px;
   cursor: pointer;
 }
+
 .total-price{
   display: flex;
   justify-content: end;
