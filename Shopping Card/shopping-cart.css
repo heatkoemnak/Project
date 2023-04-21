@@ -9,9 +9,9 @@ body{
 }
 .cart{
   position: fixed;
-  right: -300px;
+  right: -400px;
   top: 10.4rem;
-  width: 300px;
+  width: 400px;
   background-color: #fff;
   z-index: 999;
   transition: 0.5s;
@@ -43,6 +43,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  margin-right: 150px;
 
 }
 .cart .cart-img{
@@ -51,6 +52,10 @@ body{
   object-fit: cover;
 
   
+}
+.cart-product-name{
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 .quantity{
@@ -81,8 +86,8 @@ justify-content:end;
   gap: 10px;
   margin-right: 10px;
   padding: 10px;
-  font-weight: 700;
-  font-size: 1.2em;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 .checkout{
   display: flex;
