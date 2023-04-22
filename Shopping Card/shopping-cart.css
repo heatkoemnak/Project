@@ -9,31 +9,28 @@ body{
 }
 .cart{
   position: fixed;
+  top: 0;
   right: -450px;
-  top: 10.4rem;
-  width:450px;
+  width: 450px;
   background-color: #fff;
-  z-index: 999;
   transition: 0.5s;
-  
+  overflow: hidden;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
 }
 .cart h3{
   text-align: center;
   padding: 10px;
   background-color: #f1f1f1;
-  border-bottom: 1px solid #ccc;
 }
 .cart.active{
   right: 0;
-  transition: 0.5s;
 
 }
 .close-cart{
   display: flex;
   justify-content:end;
-    right: 0;
-    top:10;
     background-color: #ccc;
     font-weight: 700;
     font-size: 1.5em;
@@ -43,68 +40,52 @@ body{
     cursor: pointer;
   }
 .cart-content{
-  padding: 10px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #ee0a0a #f1f1f1;
-  
-  
-
-
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
 }
 .cart-item{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
+  padding: 0.5px;
+  
+ 
 }
+
 .cart-product-info{
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 10px;
+ 
+
+
+
+
 
   
+
 
 }
 .cart .image-cart{
-  width: 80px;
+  width: 100px;
   height: 70px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 4px;
+  
  
 
   
 }
-.product-title{
-  font-weight: 500;
-  font-size: 1.1em;
-  margin-left: 10px;
-  width: 100%;
-  text-align: left;
-  color: #000000;
-  text-transform: capitalize;
-  
-
-  
-}
-
 .cart-quantity{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100px;
-  margin-right: 40px;
-  padding: 2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 1.1em;
-  color: #000000;
-  text-transform: capitalize;
+  margin-right: 30px;
+ 
   
 
 }
@@ -112,15 +93,10 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30px;
-  padding: 1px;
-  border: 1px solid #ccc;
+  width: 28px;
+  border: 1px solid gray;
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 1.1em;
-  color: #000000;
-  text-transform: capitalize;
-  
+  padding: 2px;
 
 }
 .bx-minus{
@@ -138,11 +114,9 @@ body{
 .product-price{
   font-weight: 500;
   font-size: 1.1em;
-  margin-left: 10px;
-  width: 100%;
-  text-align: left;
   color: #000000;
   text-transform: capitalize;
+ 
   
 }
 

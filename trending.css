@@ -58,20 +58,20 @@
     gap: 29px;
 }.product-info{
     cursor: pointer;
-   
     width: 282px;
     background-color: rgb(255, 255, 255);
    
 }.product-text {
     padding: .5rem;
+
     
     
-}.name-price{
+}
+.name-price{
     display: flex;
     justify-content: space-between;
-    
 
-}.name-price .price{
+}.name-price .product-price{
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(71, 107, 43);
@@ -81,6 +81,18 @@
 
     
 }
+.product-name{
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    text-transform: capitalize;
+  
+  
+    
+  }
 
 .product-card{
     display: flex;
