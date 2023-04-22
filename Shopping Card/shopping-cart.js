@@ -4,6 +4,9 @@ const cart = document.querySelector(".cart");
 const cartClose = document.querySelector("#cart-close");
 cartIcon.onclick = () => {
   cart.classList.add("active");
+  //display block cart
+  document.querySelector(".cart").style.display = "block";
+
 };
 cartClose.onclick = () => {
   cart.classList.remove("active");
@@ -31,8 +34,19 @@ function ready() {
   for (var i = 0; i < addToCart.length; i++) {
     var button = addToCart[i];
     button.addEventListener("click", addToCartClicked);
+    //count notification cart
+    button.addEventListener("click", CartNotification);
   }
 }
+//CartNotification
+function CartNotification() {
+
+  var cart = document.querySelector(".cart");
+  
+}
+
+
+
 
 //Remove item on cart
 function removeCartItem(event) {
@@ -118,13 +132,14 @@ function addItemToCart(title, price, imageSrc) {
   cartRow.classList.add("cart-item");
   var cartItems = document.querySelector(".cart-content");
   var cartItemNames = cartItems.querySelectorAll(".product-title");
-
+  
   for (var i = 0; i < cartItemNames.length; i++) {
     if (cartItemNames[i].innerText == title) {
       alert("This item is already added to the cart");
       return;
     }
   }
+
   var cartRowContents = `
   <div class="cart-item">
   <img src="${imageSrc}" alt="" class="image-cart" />

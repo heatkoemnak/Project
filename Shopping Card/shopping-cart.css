@@ -15,6 +15,8 @@ body{
   background-color: #fff;
   transition: 0.5s;
   overflow: hidden;
+  display: none;
+  opacity: 0;
   z-index: 999;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 
@@ -26,6 +28,7 @@ body{
 }
 .cart.active{
   right: 0;
+  opacity: 1;
 
 }
 .close-cart{
@@ -165,9 +168,21 @@ body{
   padding: 10px;
   border-radius: 4px;
   font-weight: 700;
-  
-
-  
-
 }
+.bxs-cart-alt{
+  position: relative;
+}
+#cart-quantity{
+  position: absolute;
+  top: -20px;
+  left: 13px;
+  padding: 1px 3px;
+  font-weight: 500;
+  color: #f30a0aec;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid rgb(184, 175, 175);
 
+
+ 
+}
