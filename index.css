@@ -361,3 +361,20 @@ span{
   cursor: pointer;
   transition: calc(0.5s);
 }
+.footer-container{
+  display: flex;
+}
+.footer-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  gap: 30px;
+
+}
+.footer-menu-item{
+  
+}
