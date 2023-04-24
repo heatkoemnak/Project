@@ -318,4 +318,46 @@ span{
  
 }
 
+.search-product{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
 
+  padding: 10px;
+  text-align: center;
+
+
+
+}
+.search-product-input{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+
+
+}
+.search-product-input input[type="text"]{
+  width:500px;
+  padding: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  color: black;
+  transition: calc(0.5s);
+
+}
+.search-product-input button{
+  padding: 10px;
+  background-color: #28400c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: calc(0.5s);
+}

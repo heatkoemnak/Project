@@ -1,6 +1,5 @@
 
 .Popular{
-    background-color: #f5f5f5;
    
     display: flex;
     width: 80%;
@@ -34,6 +33,7 @@
     grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
     margin: auto;
     width: 80%;
+    background-color:#f4efef;
 }
 .Product img{
     cursor: pointer;
@@ -52,7 +52,6 @@
 }
 .product-container{
     display: flex;
-   
     flex-wrap: wrap;
     width: 100%;
     gap: 29px;
@@ -66,6 +65,30 @@
 
     
     
+}
+.products-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: rgb(53, 54, 52);
+   
+    
+}
+.products-type a{
+    color:gray;
+    font-size: 1.2rem;
+ 
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 2px solid rgb(71, 107, 43);
+    transition: all .42 ease;
+    margin-left: 20px;
+}.products-type a:hover{
+    color: rgb(255, 208, 0);
+    border-bottom: 2px solid rgb(255, 208, 0);
+    transition: all .42 ease;
 }
 .name-price{
     display: flex;

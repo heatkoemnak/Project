@@ -19,7 +19,7 @@ if (document.readyState == "loading") {
 }
 function ready() {
   const removeItem = document.querySelectorAll(".remove-item");
-  console.log(removeItem);
+ 
   for (var i = 0; i < removeItem.length; i++) {
     var button = removeItem[i];
     button.addEventListener("click", removeCartItem);
@@ -35,17 +35,9 @@ function ready() {
     var button = addToCart[i];
     button.addEventListener("click", addToCartClicked);
     //count notification cart
-    button.addEventListener("click", CartNotification);
+    
   }
 }
-//CartNotification
-function CartNotification() {
-
-  var cart = document.querySelector(".cart");
-  
-}
-
-
 
 
 //Remove item on cart
