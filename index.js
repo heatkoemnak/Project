@@ -47,7 +47,7 @@ function home() {
 function scrollto() {
   document.getElementById("product").scrollIntoView();
 }
-//scrolling to popualr product
+//products type
 const ProductType = document.querySelector(".products-type").querySelectorAll("a");
 console.log(ProductType);
 ProductType.forEach((item) => {
