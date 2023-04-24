@@ -48,17 +48,12 @@ function scrollto() {
   document.getElementById("product").scrollIntoView();
 }
 //scrolling to popualr product
-const ProductType = document.getElementsByClassName("menu");
-for (var i = 0; i < ProductType.length; i++) {
-  var button = ProductType[i];
-  button.addEventListener("click", scrollto);
-}
-
-//scrolling to product
-function scrollto(event) {
-  var buttonClicked = event.target;
-  //style color
-  buttonClicked.style.color = " rgb(255, 208, 0)";
-
-}
-
+const ProductType = document.querySelector(".products-type").querySelectorAll("a");
+console.log(ProductType);
+ProductType.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    ProductType.forEach(nav=>nav.classList.remove("active"));
+    item.classList.add("active");
+    
+  });
+});
