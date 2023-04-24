@@ -70,28 +70,25 @@
 .name-price{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+
+
 
 }.name-price .product-price{
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(71, 107, 43);
-}.product-text .description{
+}.product-text .product-details{
     font-size: 1rem;
     color: rgb(53, 54, 52);
 
     
 }
 .product-name{
-    font-weight: 500;
-    font-size: 1.1em;
-    margin-left: 10px;
-    width: 100%;
-    text-align: left;
-    color: #000000;
-    text-transform: capitalize;
-  
-  
-    
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(71, 107, 43);
   }
 
 .product-card{
