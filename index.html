@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="trending.css" />
     <link rel="stylesheet" href="mobile-resonsive.css" />
     <link rel="stylesheet" href="Shopping Card/shopping-cart.css" />
+    <link rel="stylesheet" href="form.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -35,22 +36,84 @@
     <nav class="nav-bar" id="mynav-bar">
       <h1 class="logo">Anti WastE</h1>
       <div class="nav-menu">
-        <li><a href="#home" onclick="home()" class="item">Home</a></li>
+        <li><a href="home.html" class="item">Home</a></li>
         <li><a href="#Service" onclick="Service()" class="item">Services</a></li>
         <li><a href="#product" onclick="Product()" class="item">Shop</a></li>
-        <li><a onclick="contact()" class="item">Contact us</a></li>
-        <li><a onclick="Team()" class="item">Team</a></li>
+        <li><a herf="#contact" onclick="contact()" class="item">Contact us</a></li>
+        <li><a herf="#team" onclick="Team()" class="item">Team</a></li>
       </div>
       <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
         <i class="bx bxs-cart-alt" id="shopping-cart"><span class="cart-quantity" id="cart-quantity">1</span></i>
         <input id="search" type="text" placeholder="Search.." />
-        <a class="login" id="cta" onclick="login()">Login </a>
+        <a href="#" class="login" id="cta">Login </a>
         <i class="fas fa-user" id="account"></i>
       </div>
       <!--nav icon end-->
 
     </nav>
+    <div class="container active" id="form">
+      <div class="login-content">
+        <h1>LOGIN FORM</h1>
+      </div>
+        
+
+
+      <!-- Sign up form  -->
+      <div class="signup-content">
+        <h1>Sign Up</h1>
+        <div class="switch-btn">
+          <button class="signUp-btn" id="signUp-btn">SIGN UP</button>
+          <button class="signIn-btn " id="signIn-btn">Sign In</button>
+        </div>
+        
+        <form class="signup-box" >
+          <div class="name">
+            <div class="firstName">
+              <label for="Username">First Name</label>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="lastName">
+              <label for="Username">Last Name</label>
+              <input type="text" placeholder="Username" />
+            </div>
+          </div>
+
+          <label for="Email">Email</label>
+          <input type="email" placeholder="Email">
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Password">
+          <label for="Phone">Phone</label>
+          <input type="tel" placeholder="Phone">
+          <div class="accept-policy">
+            <input type="checkbox" name="accept" id="accept">
+            <label for="accept">Accept the term of service and Privacy Policy</label>
+          </div>
+        
+          <div class="signup-submit">
+              <button class="submit-signup" id="submit-signup">SIGN UP</button>
+              <button class="cancel" id="submit-cancel">CANCEL</button>
+          </div>
+        </form
+
+      </div>
+
+        
+        
+      </div>
+
+      
+        
+    </div>
+
+      
+
+        
+      
+      
+      
+      
+  
     <!-- shoping cart -->
     <!-- cartItem.innerHTML -->
 
@@ -97,10 +160,10 @@
       <div id="slideshow-example" data-component="slideshow">
         <div role="list">
           <div class="slide">
-            <img src="asset/s002.png" alt="" />
+            <img src="asset/s005.jpg" alt="" />
           </div>
           <div class="slide">
-            <img src="asset/s001.png" alt="" />
+            <img src="asset/s002.png" alt="" />
           </div>
           <div class="slide">
             <img src="asset/s003.png" alt="" />

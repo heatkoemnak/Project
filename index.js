@@ -2,16 +2,32 @@
 function Team() {
   window.open("team.html");
 }
+const signIn = document.querySelector(".login");
+const showForm = document.querySelector("#form");
+signIn.onclick = () => {
+  showForm.style.display = "flex";
+};
+const signUp = document.querySelector("#signup-btn");
+const SignIn = document.querySelector(".login-content");
+signUp.onclick = () => {
+  SignIn.style.display = "none";
 
-function login() {
-  window.open("login.html");
+};
+
+const signUpBtn=document.querySelector("#signUp-btn");
+const signUpForm=document.querySelector("#signUp-form");
+signUpBtn.onclick=()=>{
+  signUpForm.style.display="flex";
+  showForm.style.display="none";
 }
-function signup() {
-  window.open("signup.html");
-}
-function homepage() {
-  window.open("homepage.html");
-}
+
+
+
+
+
+
+
+
 
 //!slide show
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
@@ -48,12 +64,13 @@ function scrollto() {
   document.getElementById("product").scrollIntoView();
 }
 //products type
-const ProductType = document.querySelector(".products-type").querySelectorAll("a");
+const ProductType = document
+  .querySelector(".products-type")
+  .querySelectorAll("a");
 console.log(ProductType);
 ProductType.forEach((item) => {
   item.addEventListener("click", (e) => {
-    ProductType.forEach(nav=>nav.classList.remove("active"));
+    ProductType.forEach((nav) => nav.classList.remove("active"));
     item.classList.add("active");
-    
   });
 });

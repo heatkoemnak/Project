@@ -13,9 +13,6 @@ function menu(){
     menu.style.textAlign="left";
     menu.style.margin="10px";
 
-
-   
-
 }
 function back() {
     window.open("index.html")

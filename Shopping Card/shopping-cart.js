@@ -38,8 +38,6 @@ function ready() {
     
   }
 }
-
-
 //Remove item on cart
 function removeCartItem(event) {
   var buttonClicked = event.target;
