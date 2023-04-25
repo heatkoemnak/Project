@@ -53,11 +53,19 @@ button {
   -o-transition: all 0.4s ease-in-out;
 }
 .logo {
-  font-style: oblique;
-  font-size: 3.5rem;
+
   font-weight: 700;
-cursor: pointer;
-  color: var(--primary-color);
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 3rem;
+  color: rgb(255, 162, 0);
+  text-transform: uppercase;
+ 
+ 
 
 }
 
@@ -90,7 +98,7 @@ cursor: pointer;
 
 }
 .nav-menu li:hover{
-  color: var(--primary-color);
+  color: #90d640;
   transition: none;
 
 }

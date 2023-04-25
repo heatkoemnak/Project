@@ -29,29 +29,27 @@
   </head>
   <body>
     <h3 class="header">RECYCLING WEBSITE</h3>
+
     <!-- navagation bar -->
 
     <nav class="nav-bar" id="mynav-bar">
       <h1 class="logo">Anti WastE</h1>
       <div class="nav-menu">
         <li><a href="#home" onclick="home()" class="item">Home</a></li>
-        <li>
-          <a href="#Service" onclick="Service()" class="item">Services</a>
-        </li>
-        <li>
-          <a href="#product" onclick="Product()" class="item">Products</a>
-        </li>
+        <li><a href="#Service" onclick="Service()" class="item">Services</a></li>
+        <li><a href="#product" onclick="Product()" class="item">Products</a></li>
         <li><a onclick="contact()" class="item">Contact us</a></li>
         <li><a onclick="Team()" class="item">Team</a></li>
       </div>
+      <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
-        <i class="bx bxs-cart-alt" id="shopping-cart" onclick="ShowCart() ">
-          <span class="cart-quantity" id="cart-quantity">1</span>
-        </i>
+        <i class="bx bxs-cart-alt" id="shopping-cart"><span class="cart-quantity" id="cart-quantity">1</span></i>
         <input id="search" type="text" placeholder="Search.." />
         <a class="login" id="cta" onclick="login()">Login </a>
         <i class="fas fa-user" id="account"></i>
       </div>
+      <!--nav icon end-->
+
     </nav>
     <!-- shoping cart -->
     <!-- cartItem.innerHTML -->
@@ -168,7 +166,7 @@
       <div class="popular-text">
         <div class="products-type">
           <a class="active" href="#">All</a>
-          <a  href="#">Popular Products</a>
+          <a href="#">Popular Products</a>
           <a href="#">Shoes</a>
           <a href="#">Accessories</a>
           <a href="#">Bags</a>
@@ -410,6 +408,7 @@
         <a class="seemore" href="#">See more</a>
       </div>
     </div>
+
     <section class="Product active" id="product">
       <div class="product-container" id="product-container">
         <div class="product-info" id="product-info">
@@ -634,7 +633,6 @@
 
     <footer>
       <div class="footer-container">
-        
         <div class="footer-menu">
           <div class="footer-menu-item">
             <h2>Menu</h2>
@@ -680,8 +678,6 @@
           </a>
         </div>
       </div>
-
-       
     </footer>
 
     <script src="index.js"></script>
