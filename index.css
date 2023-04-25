@@ -106,7 +106,6 @@ button {
   cursor: pointer;
   display: flex;
   gap:20px;
-
   align-items: center;
   justify-content: center;
  
@@ -133,7 +132,7 @@ button {
   padding:10px;
 }.nav-icon .login{
   color: var(--secondary-color);
-  background-color: #2edf28;
+  background-color: #2e3427;
   padding: 5px;
   border-radius: 3px;
 }
