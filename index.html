@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="trending.css" />
     <link rel="stylesheet" href="mobile-resonsive.css" />
     <link rel="stylesheet" href="Shopping Card/shopping-cart.css" />
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -37,39 +37,40 @@
       <h1 class="logo">Anti WastE</h1>
       <div class="nav-menu">
         <li><a href="home.html" class="item">Home</a></li>
-        <li><a href="#Service" onclick="Service()" class="item">Services</a></li>
+        <li>
+          <a href="#Service" onclick="Service()" class="item">Services</a>
+        </li>
         <li><a href="#product" onclick="Product()" class="item">Shop</a></li>
-        <li><a herf="#contact" onclick="contact()" class="item">Contact us</a></li>
+        <li>
+          <a herf="#contact" onclick="contact()" class="item">Contact us</a>
+        </li>
         <li><a herf="#team" onclick="Team()" class="item">Team</a></li>
       </div>
       <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
-        <i class="bx bxs-cart-alt" id="shopping-cart"><span class="cart-quantity" id="cart-quantity">1</span></i>
-        <input id="search" type="text" placeholder="Search.." />
+        <i class="bx bxs-cart-alt" id="shopping-cart"
+          ><span class="cart-quantity" id="cart-quantity">1</span></i
+        >
+
         <div class="sign-account">
           <div class="log-to-signin">
-            <p>Hello</p>
+            <p>Hello👋</p>
             <a href="#" class="login" id="cta">Sign In </a>
           </div>
           <p>Account</p>
         </div>
-       
-        <i class="fas fa-user" id="account"></i>
       </div>
-      <!--nav icon end-->
-
     </nav>
+    <!--nav icon end-->
+
+    <!-- hero section  -->
     <div class="container active" id="form">
-      <i class='bx bx-x close-form' id="close"></i>
+      <i class="bx bx-x close-form" id="close"></i>
       <div class="login-content" id="sign-in">
-        <h1>Sign In</h1>
-        <div class="switch-btn-signin">
-          <button class="signin-btn" id="signUn">Sign In</button>
-          <button class="signup-btn " id="signUp">Sign Up</button>
-        </div>
-        <form class="login-box" >
-          <label for="Username">Username</label>
-          <input type="text" placeholder="Username" />
+        <h1>Sign in</h1>
+        <form class="login-box">
+          <label for="Email">Email or mobile phone number</label>
+          <input type="email" placeholder="Email" />
           <label for="Password">Password</label>
           <input type="password" placeholder="Password" />
           <div class="remember">
@@ -79,30 +80,28 @@
           <div class="forget">
             <a href="#">Forget password?</a>
           </div>
-          <!-- sign in with google  -->
+
           <div class="google">
-            <img src="asset/google.webp" alt="google">
+            <img src="asset/google.webp" alt="google" />
             <a href="#" class="google-btn">Sign in with Google</a>
-
           </div>
-
-          <div class="login-submit">
-              <button class="submit-login" id="submit-login">LOGIN</button>
-              <button class="cancel-btn" id="cancel-btn">CANCEL</button>
+          <button class="submit-login" id="submit-login">LOGIN</button>
+          <div class="new-account">
+            <p>New to Anti WastE?</p>
+            <a href="#">Create your Anti WastE account</a>
           </div>
+          <button class="signup-btn" id="signUp">Create New Account</button>
         </form>
       </div>
-        
-
 
       <!-- Sign up form  -->
       <div class="signup-content" id="signup-content">
         <h1>Sign Up</h1>
         <div class="switch-btn-signup">
           <button class="signup-btn" id="signup">SIgn Up</button>
-          <button class="signin-btn " id="signin">Sign In</button>
+          <button class="signin-btn" id="signin">Sign In</button>
         </div>
-        <form class="signup-box" >
+        <form class="signup-box">
           <div class="name">
             <div class="firstName">
               <label for="Username">First Name</label>
@@ -115,40 +114,27 @@
           </div>
 
           <label for="Email">Email</label>
-          <input type="email" placeholder="Email">
+          <input type="email" placeholder="Email" />
           <label for="Password">Password</label>
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password" />
           <label for="Phone">Phone</label>
-          <input type="tel" placeholder="Phone">
+          <input type="tel" placeholder="Phone" />
           <div class="accept-policy">
-            <input type="checkbox" name="accept" id="accept">
-            <label for="accept">Accept the term of service and Privacy Policy</label>
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept"
+              >Accept the term of service and Privacy Policy</label
+            >
           </div>
-        
+
           <div class="signup-submit">
-              <button class="submit-signup" id="submit-signup">SIGN UP</button>
-              <button class="cancel" id="submit-cancel">CANCEL</button>
+            <button class="submit-signup" id="submit-signup">SIGN UP</button>
+            <button class="cancel" id="submit-cancel">CANCEL</button>
           </div>
-        </form
-
+        </form>
       </div>
-
-        
-        
-      </div>
-
-      
-        
     </div>
 
-      
 
-        
-      
-      
-      
-      
-  
     <!-- shoping cart -->
     <!-- cartItem.innerHTML -->
 

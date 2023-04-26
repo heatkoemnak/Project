@@ -2,7 +2,7 @@
 function Team() {
   window.open("team.html");
 }
-const signIn = document.querySelector(".login");
+const signIn = document.querySelector(".sign-account");
 const showForm = document.querySelector("#form");
 signIn.onclick = () => {
   showForm.style.display = "flex";
@@ -12,12 +12,16 @@ closeForm.onclick = () => {
   showForm.style.display = "none";
 };
 const BtnSignup = document.querySelector("#signUp");
+const h1 = document.querySelector(".login-content h1");
+
 const ShowSignUp = document.querySelector(".signup-content");
 const ShowSignin = document.querySelector(".login-content");
 
 BtnSignup.onclick = () => {
   ShowSignUp.style.display = "flex";
   ShowSignin.style.display = "none";
+  
+
 
 };
 
