@@ -6,7 +6,6 @@ cartIcon.onclick = () => {
   cart.classList.add("active");
   //display block cart
   document.querySelector(".cart").style.display = "block";
-
 };
 cartClose.onclick = () => {
   cart.classList.remove("active");
@@ -19,11 +18,12 @@ if (document.readyState == "loading") {
 }
 function ready() {
   const removeItem = document.querySelectorAll(".remove-item");
- 
+
   for (var i = 0; i < removeItem.length; i++) {
     var button = removeItem[i];
     button.addEventListener("click", removeCartItem);
   }
+  
   const quantity = document.querySelectorAll(".quantity");
   for (var i = 0; i < quantity.length; i++) {
     var input = quantity[i];
@@ -35,7 +35,6 @@ function ready() {
     var button = addToCart[i];
     button.addEventListener("click", addToCartClicked);
     //count notification cart
-    
   }
 }
 //Remove item on cart
@@ -87,7 +86,6 @@ function decreseValue(event) {
   UpdateCartTotal();
 }
 
-
 function UpdateCartTotal() {
   var cartItemContainer = document.querySelector(".cart-content");
   var cartRows = cartItemContainer.querySelectorAll(".cart-product-info");
@@ -95,7 +93,7 @@ function UpdateCartTotal() {
   for (var i = 0; i < cartRows.length; i++) {
     var cartRow = cartRows[i];
     var priceElement = cartRow.querySelector(".product-price");
-    var quantityElement = cartRow.querySelector(".quantity");
+    var quantityElement = cartRow.querySelector(".quantity");  
     var price = parseFloat(priceElement.innerText.replace("$", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
@@ -104,8 +102,6 @@ function UpdateCartTotal() {
 
   document.querySelector(".total-price-value").innerText = "$" + total;
 }
-
-
 
 function addToCartClicked(event) {
   var button = event.target;
@@ -122,7 +118,7 @@ function addItemToCart(title, price, imageSrc) {
   cartRow.classList.add("cart-item");
   var cartItems = document.querySelector(".cart-content");
   var cartItemNames = cartItems.querySelectorAll(".product-title");
-  
+
   for (var i = 0; i < cartItemNames.length; i++) {
     if (cartItemNames[i].innerText == title) {
       alert("This item is already added to the cart");
@@ -154,5 +150,7 @@ function addItemToCart(title, price, imageSrc) {
     .addEventListener("click", removeCartItem);
   cartRow.querySelector(".plus").addEventListener("click", increseValue);
   cartRow.querySelector(".minus").addEventListener("click", decreseValue);
-  cartRow.querySelector(".quantity").addEventListener("change", quantityChanged);
+  cartRow
+    .querySelector(".quantity")
+    .addEventListener("change", quantityChanged);
 }
