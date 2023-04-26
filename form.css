@@ -17,10 +17,6 @@
     border: none;
     outline: none;
     padding: 10px;
-
-
-
-
   }
   .container{
     display: flex;
@@ -54,7 +50,7 @@
     align-items: center;
 
 
-   
+  
     
   }
   .login-box{
@@ -234,6 +230,8 @@ input:focus{
     
 
  }
+
+
 
 
 .signup-content{
