@@ -6,24 +6,26 @@ const signIn = document.querySelector(".sign-account");
 const showForm = document.querySelector("#form");
 signIn.onclick = () => {
   showForm.style.display = "flex";
+
 };
 const closeForm = document.querySelector("#close");
 closeForm.onclick = () => {
   showForm.style.display = "none";
+
 };
 const BtnSignup = document.querySelector("#signUp");
-const h1 = document.querySelector(".login-content h1");
-
 const ShowSignUp = document.querySelector(".signup-content");
 const ShowSignin = document.querySelector(".login-content");
 
 BtnSignup.onclick = () => {
   ShowSignUp.style.display = "flex";
   ShowSignin.style.display = "none";
-  
-
-
 };
+const BackToLogin=document.querySelector(".bx-arrow-back");
+BackToLogin.onclick=()=>{
+  ShowSignUp.style.display = "none";
+  ShowSignin.style.display = "flex";
+}
 
 
 // const SignUp =document.querySelector("#signup-content");

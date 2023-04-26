@@ -48,6 +48,7 @@
       </div>
       <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
+        <i class="bx bx-search btn-search" id="search"></i>
         <i class="bx bxs-cart-alt" id="shopping-cart"
           ><span class="cart-quantity" id="cart-quantity">1</span></i
         >
@@ -90,17 +91,19 @@
             <p>New to Anti WastE?</p>
             <a href="#">Create your Anti WastE account</a>
           </div>
-          <button class="signup-btn" id="signUp">Create New Account</button>
+          <button class="signup-btn" id="signUp">Create an Account</button>
         </form>
       </div>
 
       <!-- Sign up form  -->
       <div class="signup-content" id="signup-content">
-        <h1>Sign Up</h1>
-        <div class="switch-btn-signup">
-          <button class="signup-btn" id="signup">SIgn Up</button>
-          <button class="signin-btn" id="signin">Sign In</button>
+        <!-- button back  -->
+        <div class="btn-back-to-login">
+          <i class="bx bx-arrow-back" id="back">Sign in</i>
         </div>
+      
+        <h1>Create Account</h1>
+        
         <form class="signup-box">
           <div class="name">
             <div class="firstName">
@@ -117,19 +120,14 @@
           <input type="email" placeholder="Email" />
           <label for="Password">Password</label>
           <input type="password" placeholder="Password" />
-          <label for="Phone">Phone</label>
-          <input type="tel" placeholder="Phone" />
+          <label for="Phone">Mobile phone</label>
+          <input type="tel" placeholder="mobile phone" />
           <div class="accept-policy">
             <input type="checkbox" name="accept" id="accept" />
-            <label for="accept"
-              >Accept the term of service and Privacy Policy</label
-            >
+            <label for="accept">Accept the term of service and Privacy Policy</label>
           </div>
-
-          <div class="signup-submit">
-            <button class="submit-signup" id="submit-signup">SIGN UP</button>
-            <button class="cancel" id="submit-cancel">CANCEL</button>
-          </div>
+          <button class="submit-signup" id="submit-signup">SIGN UP</button>
+          
         </form>
       </div>
     </div>
@@ -239,10 +237,9 @@
     <!-- close slid type -->
 
     <div class="search-product">
-      <div class="search-product-input">
-        <input type="text" placeholder="Search Product" />
-        <button class="search-btn">Search</button>
-      </div>
+     
+      <input type="text" placeholder="Search Product" />
+      <button class="search-btn">Search</button>
     </div>
 
     <!-- popular product -->

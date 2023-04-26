@@ -125,7 +125,13 @@ button {
   padding: 5px;
   font-size: 1rem;
 }
-
+.btn-search{
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  background-color:var(--secondary-color);
+  border-radius: 3px;
+  padding: 2px;
+}
 .campagn {
   
   
@@ -285,6 +291,7 @@ span{
 
 
 .footer-container{
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,41 +312,39 @@ span{
   margin: 0 auto;
   width: 80%;
 
-  padding: 10px;
-  text-align: center;
-
-
-
 }
-.search-product-input{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
 
+.search-product input{
 
-}
-.search-product-input input[type="text"]{
-  width:500px;
-  padding: 10px;
-  margin-right: 10px;
-  border-bottom: 1px solid #ccc;
-  border-top: none;
-  color: black;
-  transition: calc(0.5s);
-
-}
-.search-product-input button{
-  padding: 10px;
-  background-color: #28400c;
-  color: white;
+  width: 50%;
+  padding: 15px;
+  outline: none;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+
+}
+
+.search-product .search-btn{
+  width: 7%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-top-right-radius:0px;
+  background-color: #36590f;
+  color: white;
   cursor: pointer;
   transition: calc(0.5s);
+  
+  
+
+
+  
+
+
+
+  
 }
 .footer-container{
   display: block;
