@@ -75,8 +75,8 @@ const ShowMore = document.querySelectorAll(".product-info");
 for (var i = 0; i < SeeMore.length; i++) {
   var button = SeeMore[i];
   button.addEventListener("click", seeMore);
- 
 }
 function seeMore() {
   console.log(ShowMore);
+  alert("helko");
 }
