@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="/trending.css" />
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/Shopping Card/shopping-cart.css" />
-    <link rel="stylesheet" href="/form.css">
+    <link rel="stylesheet" href="/form.css" />
 
     <!-- link html file  -->
 
-    
     <!-- Linking boxicon -->
     <link
       rel="stylesheet"
@@ -22,7 +21,6 @@
     <!-- include file js  -->
     <script src="/index.js" defer></script>
     <script src="/Shopping Card/shopping-cart.js" defer></script>
-
   </head>
   <body>
     <h3 class="header">RECYCLING WEBSITE</h3>
@@ -56,71 +54,72 @@
       </div>
     </nav>
     <div class="container active" id="form">
-        <i class="bx bx-x close-form" id="close"></i>
-        <div class="login-content" id="sign-in">
-          <h1>Sign in</h1>
-          <form class="login-box">
-            <label for="Email">Email or mobile phone number</label>
-            <input type="email" placeholder="Email" />
-            <label for="Password">Password</label>
-            <input type="password" placeholder="Password" />
-            <div class="remember">
-              <input type="checkbox" name="remember" id="remember" />
-              <label for="remember">Remember me</label>
-            </div>
-            <div class="forget">
-              <a href="#">Forget password?</a>
-            </div>
-  
-            <div class="google">
-              <img src="asset/google.webp" alt="google" />
-              <a href="#" class="google-btn">Sign in with Google</a>
-            </div>
-            <button class="submit-login" id="submit-login">LOGIN</button>
-            <div class="new-account">
-              <p>New to Anti WastE?</p>
-              <a href="#">Create your Anti WastE account</a>
-            </div>
-            <button class="signup-btn" id="signUp">Create an Account</button>
-          </form>
-        </div>
-  
-        <!-- Sign up form  -->
-        <div class="signup-content" id="signup-content">
-          <!-- button back  -->
-          <div class="btn-back-to-login">
-            <i class="bx bx-arrow-back" id="back">Sign in</i>
+      <i class="bx bx-x close-form" id="close"></i>
+      <div class="login-content" id="sign-in">
+        <h1>Sign in</h1>
+        <form class="login-box">
+          <label for="Email">Email or mobile phone number</label>
+          <input type="email" placeholder="Email" />
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Password" />
+          <div class="remember">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
           </div>
-        
-          <h1>Create Account</h1>
-          
-          <form class="signup-box">
-            <div class="name">
-              <div class="firstName">
-                <label for="Username">First Name</label>
-                <input type="text" placeholder="Username" />
-              </div>
-              <div class="lastName">
-                <label for="Username">Last Name</label>
-                <input type="text" placeholder="Username" />
-              </div>
-            </div>
-  
-            <label for="Email">Email</label>
-            <input type="email" placeholder="Email" />
-            <label for="Password">Password</label>
-            <input type="password" placeholder="Password" />
-            <label for="Phone">Mobile phone</label>
-            <input type="tel" placeholder="mobile phone" />
-            <div class="accept-policy">
-              <input type="checkbox" name="accept" id="accept" />
-              <label for="accept">Accept the term of service and Privacy Policy</label>
-            </div>
-            <button class="submit-signup" id="submit-signup">SIGN UP</button>
-            
-          </form>
-        </div>
+          <div class="forget">
+            <a href="#">Forget password?</a>
+          </div>
+
+          <div class="google">
+            <img src="asset/google.webp" alt="google" />
+            <a href="#" class="google-btn">Sign in with Google</a>
+          </div>
+          <button class="submit-login" id="submit-login">LOGIN</button>
+          <div class="new-account">
+            <p>New to Anti WastE?</p>
+            <a href="#">Create your Anti WastE account</a>
+          </div>
+          <button class="signup-btn" id="signUp">Create an Account</button>
+        </form>
       </div>
+
+      <!-- Sign up form  -->
+      <div class="signup-content" id="signup-content">
+        <!-- button back  -->
+        <div class="btn-back-to-login">
+          <i class="bx bx-arrow-back" id="back">Sign in</i>
+        </div>
+
+        <h1>Create Account</h1>
+
+        <form class="signup-box">
+          <div class="name">
+            <div class="firstName">
+              <label for="Username">First Name</label>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="lastName">
+              <label for="Username">Last Name</label>
+              <input type="text" placeholder="Username" />
+            </div>
+          </div>
+
+          <label for="Email">Email</label>
+          <input type="email" placeholder="Email" />
+          <label for="Password">Password</label>
+          <input type="password" placeholder="Password" />
+          <label for="Phone">Mobile phone</label>
+          <input type="tel" placeholder="mobile phone" />
+          <div class="accept-policy">
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept"
+              >Accept the term of service and Privacy Policy</label
+            >
+          </div>
+          <button class="submit-signup" id="submit-signup">SIGN UP</button>
+        </form>
+      </div>
+    </div>
 
     <!-- menu category  -->
     <div class="menu-category" id="menu-category">
@@ -133,10 +132,10 @@
         </div>
         <div class="menu-item">
           <!-- product list RECYCLING  -->
-          <a href="Product Category/fashion.html" class="item">Fashion/</a>
+          <a href="/Product Category/fashion.html" class="item">Fashion/</a>
           <a href="#" class="item">Watches/</a>
           <a href="#" class="item">Shoes/</a>
-          <a href="/Product Category/bag.html" class="item">Bag/</a>
+          <a href="#" class="item">Bag/</a>
           <a href="#" class="item">Toys/</a>
           <a href="#" class="item">Accessories/</a>
         </div>
@@ -144,56 +143,49 @@
     </div>
 
     <div class="cart active">
-        <i class="bx bx-x close-cart" id="cart-close"></i>
-  
-        <h3>Cart Ordered</h3>
-        <!-- cart content -->
-  
-        <div class="cart-content">
-          
-  
-        </div>
-  
-        <!-- total price -->
-        <div class="total-price">
-          <div class="total-price-text">Total</div>
-          <div class="total-price-value">$0</div>
-        </div>
-        <!-- checkout -->
-  
-        <div class="checkout">
-          <button class="checkout-btn">Checkout</button>
-        </div>
+      <i class="bx bx-x close-cart" id="cart-close"></i>
+
+      <h3>Cart Ordered</h3>
+      <!-- cart content -->
+
+      <div class="cart-content"></div>
+
+      <!-- total price -->
+      <div class="total-price">
+        <div class="total-price-text">Total</div>
+        <div class="total-price-value">$0</div>
       </div>
+      <!-- checkout -->
 
-
-
-
-
+      <div class="checkout">
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
 
     <div class="search-product">
-     
-        <input type="text" placeholder="Search Product" />
-        <button class="search-btn">Search</button>
-      </div>
+      <input type="text" placeholder="Search Product" />
+      <button class="search-btn">Search</button>
+    </div>
 
-
-      <!-- banner of fashion -->
+    <!-- banner of bags -->
     <div class="Popular" id="popular">
-        <div class="popular-text">
-          <div class="products-type">
-            <a class="active" href="#">Fashion Products</a>
-          </div>
-          <a class="seemore" href="#">See more</a>
+      <div class="popular-text">
+        <div class="products-type">
+          <a class="active" href="#">Bag Products</a>
         </div>
+        <a class="seemore" href="#">See more</a>
       </div>
-    <section class="Product" id="product">
+    </div>
+
+    <!-- product  -->
+
+    <section class="Product active" id="product">
       <div class="product-container" id="product-container">
         <div class="product-info" id="product-info">
           <img
             class="product-image"
             id="product-image"
-            src="/asset/clothes1.jpg"
+            src="asset/bag1.jpg"
             alt=""
           />
           <div class="product-text">
@@ -220,7 +212,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes2.jpg"
+            src="asset/bag2.jpg"
             alt=""
           />
           <div class="product-text">
@@ -247,7 +239,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes3.jpg"
+            src="asset/bag3.jpg"
             alt=""
           />
           <div class="product-text">
@@ -274,7 +266,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes5.jpg"
+            src="asset/bag4.webp"
             alt="image-cart"
           />
           <div class="product-text">
@@ -301,7 +293,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes6.jpg"
+            src="asset/bag3.jpg"
             alt=""
           />
           <div class="product-text">
@@ -328,7 +320,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes7.jpg"
+            src="asset/bag1.jpg"
             alt=""
           />
           <div class="product-text">
@@ -356,7 +348,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes8.jpg"
+            src="asset/bag4.webp"
             alt=""
           />
           <div class="product-text">
@@ -383,7 +375,7 @@
           <img
             class="product-image"
             id="product-image"
-            src="asset/clothes4.jpg"
+            src="asset/bag1.jpg"
             alt=""
           />
           <div class="product-text">
