@@ -71,17 +71,12 @@ ProductType.forEach((item) => {
 });
 
 const SeeMore = document.querySelectorAll(".seemore");
-const ShowMore =document.querySelectorAll(".product-info");
-for (var i=0;i<SeeMore.length;i++){
-  //show only 4 item
+const ShowMore = document.querySelectorAll(".product-info");
+for (var i = 0; i < SeeMore.length; i++) {
+  var button = SeeMore[i];
+  button.addEventListener("click", seeMore);
  
-  SeeMore[i].onclick = () => {
-    console.log(ShowMore);
-  };
 }
-
-// SeeMore.addEventListener("click", SeeMore);
-
-// function SeeMore() {
-//   alert("Clicked");
-// }
+function seeMore() {
+  console.log(ShowMore);
+}
