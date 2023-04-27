@@ -98,7 +98,6 @@ function UpdateCartTotal() {
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }
-  total = Math.round((total * 100) / 100);
 
   document.querySelector(".total-price-value").innerText = "$" + total;
 }

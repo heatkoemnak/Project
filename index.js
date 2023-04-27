@@ -63,13 +63,25 @@ function scrollto() {
 }
 //products type
 const ProductType = document.querySelector(".menu-item").querySelectorAll("a");
-console.log(ProductType);
 ProductType.forEach((item) => {
   item.addEventListener("click", function () {
     ProductType.forEach((item) => item.classList.remove("active"));
     this.classList.add("active");
   });
+});
+
+const SeeMore = document.querySelectorAll(".seemore");
+const ShowMore =document.querySelectorAll(".product-info");
+for (var i=0;i<SeeMore.length;i++){
+  //show only 4 item
+ 
+  SeeMore[i].onclick = () => {
+    console.log(ShowMore);
+  };
 }
-);
 
+// SeeMore.addEventListener("click", SeeMore);
 
+// function SeeMore() {
+//   alert("Clicked");
+// }
