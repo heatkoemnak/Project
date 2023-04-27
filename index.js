@@ -78,5 +78,4 @@ for (var i = 0; i < SeeMore.length; i++) {
 }
 function seeMore() {
   console.log(ShowMore);
-  
 }
