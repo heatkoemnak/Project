@@ -134,24 +134,7 @@ button {
   justify-content: start;
   align-items: center;
 }
-.menu-text {
-  display: flex;
-  align-items: center;
-  
-}
-.menu-text:hover{
-  color: #90d640;
-  transition: none;
-  border: 1px solid var(--yellow-text-color);
-}
-.menu-text a,
-.menu-text i{
-  color:var(--menu-item-color);
-  font-size: 1.1rem;
-  font-weight: 400;
-  text-decoration: none;
 
-}
 
 .menu-item{
   display: flex;
