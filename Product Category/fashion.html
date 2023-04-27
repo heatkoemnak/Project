@@ -1,0 +1,449 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="/trending.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/Shopping Card/shopping-cart.css" />
+    <link rel="stylesheet" href="/form.css">
+
+    <!-- link html file  -->
+
+    
+    <!-- Linking boxicon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- include file js  -->
+    <script src="/index.js" defer></script>
+    <script src="/Shopping Card/shopping-cart.js" defer></script>
+
+  </head>
+  <body>
+    <h3 class="header">RECYCLING WEBSITE</h3>
+    <nav class="nav-bar" id="mynav-bar">
+      <h1 class="logo">Anti WastE</h1>
+      <div class="nav-menu">
+        <li><a href="home.html" class="item">Home</a></li>
+        <li>
+          <a href="#Service" onclick="Service()" class="item">Services</a>
+        </li>
+        <li><a href="#product" onclick="Product()" class="item">Shop</a></li>
+        <li>
+          <a herf="#contact" onclick="contact()" class="item">Contact us</a>
+        </li>
+        <li><a herf="#team" onclick="Team()" class="item">Team</a></li>
+      </div>
+      <!-- nav icon  -->
+      <div class="nav-icon" id="nav-icon">
+        <i class="bx bx-search btn-search" id="search"></i>
+        <i class="bx bxs-cart-alt" id="shopping-cart"
+          ><span class="cart-quantity" id="cart-quantity">1</span></i
+        >
+
+        <div class="sign-account">
+          <div class="log-to-signin">
+            <p>Hello👋</p>
+            <a href="#" class="login" id="cta">Sign In </a>
+          </div>
+          <p>Account</p>
+        </div>
+      </div>
+    </nav>
+    <div class="container active" id="form">
+        <i class="bx bx-x close-form" id="close"></i>
+        <div class="login-content" id="sign-in">
+          <h1>Sign in</h1>
+          <form class="login-box">
+            <label for="Email">Email or mobile phone number</label>
+            <input type="email" placeholder="Email" />
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Password" />
+            <div class="remember">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="forget">
+              <a href="#">Forget password?</a>
+            </div>
+  
+            <div class="google">
+              <img src="asset/google.webp" alt="google" />
+              <a href="#" class="google-btn">Sign in with Google</a>
+            </div>
+            <button class="submit-login" id="submit-login">LOGIN</button>
+            <div class="new-account">
+              <p>New to Anti WastE?</p>
+              <a href="#">Create your Anti WastE account</a>
+            </div>
+            <button class="signup-btn" id="signUp">Create an Account</button>
+          </form>
+        </div>
+  
+        <!-- Sign up form  -->
+        <div class="signup-content" id="signup-content">
+          <!-- button back  -->
+          <div class="btn-back-to-login">
+            <i class="bx bx-arrow-back" id="back">Sign in</i>
+          </div>
+        
+          <h1>Create Account</h1>
+          
+          <form class="signup-box">
+            <div class="name">
+              <div class="firstName">
+                <label for="Username">First Name</label>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="lastName">
+                <label for="Username">Last Name</label>
+                <input type="text" placeholder="Username" />
+              </div>
+            </div>
+  
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Email" />
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Password" />
+            <label for="Phone">Mobile phone</label>
+            <input type="tel" placeholder="mobile phone" />
+            <div class="accept-policy">
+              <input type="checkbox" name="accept" id="accept" />
+              <label for="accept">Accept the term of service and Privacy Policy</label>
+            </div>
+            <button class="submit-signup" id="submit-signup">SIGN UP</button>
+            
+          </form>
+        </div>
+      </div>
+
+    <!-- menu category  -->
+    <div class="menu-category" id="menu-category">
+      <div class="menu-content">
+        <div class="menu-text">
+          <!-- menu icon  -->
+          <i class="bx bx-menu menu" id="menu"></i>
+          <a href="#">All</a>
+          <!-- <i class="bx bx-x close-menu" id="close-menu"></i> -->
+        </div>
+        <div class="menu-item">
+          <!-- product list RECYCLING  -->
+          <a href="Product Category/fashion.html" class="item">Fashion/</a>
+          <a href="#" class="item">Watches/</a>
+          <a href="#" class="item">Shoes/</a>
+          <a href="#" class="item">Bag/</a>
+          <a href="#" class="item">Toys/</a>
+          <a href="#" class="item">Accessories/</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart active">
+        <i class="bx bx-x close-cart" id="cart-close"></i>
+  
+        <h3>Cart Ordered</h3>
+        <!-- cart content -->
+  
+        <div class="cart-content">
+          
+  
+        </div>
+  
+        <!-- total price -->
+        <div class="total-price">
+          <div class="total-price-text">Total</div>
+          <div class="total-price-value">$0</div>
+        </div>
+        <!-- checkout -->
+  
+        <div class="checkout">
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+
+
+
+
+
+
+    <div class="search-product">
+     
+        <input type="text" placeholder="Search Product" />
+        <button class="search-btn">Search</button>
+      </div>
+    <section class="Product" id="product">
+      <div class="product-container" id="product-container">
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="/asset/clothes1.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Jacket Suit</h3>
+              <p class="product-price">$10.00</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes2.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Weather Jiut</h3>
+              <p class="product-price">$20.0</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"> </i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes3.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Luvist tuon</h3>
+              <p class="product-price">$50.0</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes5.jpg"
+            alt="image-cart"
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Sweather Jack</h3>
+              <p class="product-price">60.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes6.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Jecket Treamvelet</h3>
+              <p class="product-price">150.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes7.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Mini Luvis</h3>
+              <p class="product-price">80.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes8.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Li Maton</h3>
+              <p class="product-price">60.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img
+            class="product-image"
+            id="product-image"
+            src="asset/clothes4.jpg"
+            alt=""
+          />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Luvis Jecket</h3>
+              <p class="product-price">30.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Contact Info</h2>
+            <a href="#">+855 977 304 279</a>
+            <a href="#">heatkoemnak@gamil.com</a>
+            <a href="#">Pnom penh,Cambodia-400104</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Follow Us</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+            <a href="#">Linkedin</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Legal</h2>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+        <div class="footer-social-media">
+          <a href="#">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
