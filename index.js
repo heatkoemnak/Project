@@ -6,12 +6,10 @@ const signIn = document.querySelector(".sign-account");
 const showForm = document.querySelector("#form");
 signIn.onclick = () => {
   showForm.style.display = "flex";
-
 };
 const closeForm = document.querySelector("#close");
 closeForm.onclick = () => {
   showForm.style.display = "none";
-
 };
 const BtnSignup = document.querySelector("#signUp");
 const ShowSignUp = document.querySelector(".signup-content");
@@ -21,12 +19,11 @@ BtnSignup.onclick = () => {
   ShowSignUp.style.display = "flex";
   ShowSignin.style.display = "none";
 };
-const BackToLogin=document.querySelector(".bx-arrow-back");
-BackToLogin.onclick=()=>{
+const BackToLogin = document.querySelector(".bx-arrow-back");
+BackToLogin.onclick = () => {
   ShowSignUp.style.display = "none";
   ShowSignin.style.display = "flex";
-}
-
+};
 
 // const SignUp =document.querySelector("#signup-content");
 
@@ -65,13 +62,14 @@ function scrollto() {
   document.getElementById("product").scrollIntoView();
 }
 //products type
-const ProductType = document
-  .querySelector(".products-type")
-  .querySelectorAll("a");
+const ProductType = document.querySelector(".menu-item").querySelectorAll("a");
 console.log(ProductType);
 ProductType.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    ProductType.forEach((nav) => nav.classList.remove("active"));
-    item.classList.add("active");
+  item.addEventListener("click", function () {
+    ProductType.forEach((item) => item.classList.remove("active"));
+    this.classList.add("active");
   });
-});
+}
+);
+
+
