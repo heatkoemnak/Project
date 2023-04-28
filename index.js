@@ -29,7 +29,6 @@ BackToLogin.onclick = () => {
 
 //!slide show
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-
 // Apply to all slideshows that you define with the markup wrote
 slideshows.forEach(initSlideShow);
 

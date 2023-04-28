@@ -44,23 +44,30 @@
   
    
 
-}.Product img:hover{
-    transform: scale(1.01);
-    transition: all .42 ease;
-    
-   
 }
 .product-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: 29px;
+    margin-top: 10px;
 }.product-info{
     cursor: pointer;
     width: 282px;
     background-color: rgb(255, 255, 255);
    
-}.product-text {
+}
+.product-info:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all .42 ease;
+   
+   
+
+    
+    
+}
+
+.product-text {
     padding: .5rem;
 
     
