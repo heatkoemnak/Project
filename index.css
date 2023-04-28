@@ -304,6 +304,7 @@ span {
 .search-product {
   position: sticky;
   top: 72;
+  z-index: -1;
   display: flex;
   justify-content: end;
   align-items: center;
