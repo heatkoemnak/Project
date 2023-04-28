@@ -175,7 +175,7 @@
 
 
 
-input{
+.login-content input{
     padding: 8px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -213,6 +213,15 @@ input:focus{
     align-items: center;
     display: none;
    
+}
+.signup-content input{
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+
 }
 .signup-content h1{
    

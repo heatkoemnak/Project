@@ -303,27 +303,32 @@ span {
 
 .search-product {
   position: sticky;
-  top: 72;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin: 0 auto;
+  top: 137;
+  background-color: var(--navbar-backround-color);
   width: 80%;
-  background-color:transparent;
-}
-
-.search-product input {
-  width: 50%;
-  padding: 14px;
-  margin-top: 10px;
-  border-radius: var(--navbar-backround-color);
-
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
  
+
+  
+}
+.search-product input{
+  width: 40%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 2px solid var(--green-primary-color);
+  border-top: none;
+  border-bottom: none;
+  transition: calc(0.5s);
 }
 
 .search-product .search-btn {
-  width: 7%;
-  padding: 16px;
+  padding: 11px;
   outline: none;
   border: none;
   border-top-right-radius: 0px;
