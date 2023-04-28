@@ -123,6 +123,10 @@ button {
   background-color:var(--white-secondary-color);
   /* border-bottom: .5px solid var(--navbar-backround-color); */
   margin-bottom: 1px;
+  position: sticky;
+  top: 75;
+
+  
   
 }
 .menu-content {
@@ -298,20 +302,22 @@ span {
 
 
 .search-product {
+  position: sticky;
+  top: 72;
   display: flex;
   justify-content: end;
   align-items: center;
   margin: 0 auto;
   width: 80%;
+  background-color:transparent;
 }
 
 .search-product input {
   width: 50%;
-  padding: 15px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
+  padding: 14px;
   margin-top: 10px;
+  border-radius: var(--navbar-backround-color);
+ 
 }
 
 .search-product .search-btn {
