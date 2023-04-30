@@ -131,6 +131,17 @@ button {
   justify-content: start;
   align-items: center;
 }
+.menu-icon{
+  cursor: pointer;
+  font-size:larger;
+
+}
+.menu-icon:hover{
+  color: var(--green-primary-color);
+  transition: none;
+  border: 1px solid greenyellow;
+}
+
 
 .menu-item {
   display: flex;
@@ -155,9 +166,9 @@ button {
 
 .All-menu {
   position: absolute;
-
-  background-color: var(--white-secondary-color);
   width: 20%;
+  z-index: 1;
+  display: none;
 }
 .all-menu-content {
   display: flex;
@@ -173,13 +184,42 @@ button {
   padding: 10px;
   border-bottom: 1px solid var(--navbar-backround-color);
 }
-
+.item.fashion ,.item.shoes ,.item.bag ,.item.watch ,.item.toy ,.item.accessories{
+  display: flex;
+  color:var(--black-tertiary-color) ;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2px;
+  border-bottom: 1px solid var(--navbar-backround-color);
+}
 .shoes-item ,.fashion-item ,.bag-item ,.watch-item ,.toy-item ,.accessories-item{
-  background-color: #553636;
   width: 80%;
-  margin: 0 auto;
+  margin: 10 auto;
 
 }
+.shoes-item a,.fashion-item a,.bag-item a,.watch-item a,.toy-item a,.accessories-item a{
+  color: var(--white-secondary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.remove-menu{
+  margin-left: 95%;
+  justify-content: flex-end;
+  background-color: rgb(255, 238, 0);
+  color: #000000;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
 
 
 .campagn {

@@ -27,6 +27,19 @@ BackToLogin.onclick = () => {
 
 // const SignUp =document.querySelector("#signup-content");
 
+//!show menu
+const allMenu = document.querySelector(".All-menu");
+const showMenu = document.querySelector(".menu-icon");
+const removeMenu = document.querySelector(".remove-menu");
+showMenu.onclick = () => {
+  allMenu.style.display = "block";
+  showMenu.style.color = "orange";
+};
+removeMenu.onclick = () => {
+  allMenu.style.display = "none";
+  showMenu.style.color = "black";
+};
+
 //!slide show
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 // Apply to all slideshows that you define with the markup wrote
