@@ -131,17 +131,15 @@ button {
   justify-content: start;
   align-items: center;
 }
-.menu-icon{
+.menu-icon {
   cursor: pointer;
-  font-size:larger;
-
+  font-size: larger;
 }
-.menu-icon:hover{
+.menu-icon:hover {
   color: var(--green-primary-color);
   transition: none;
   border: 1px solid greenyellow;
 }
-
 
 .menu-item {
   display: flex;
@@ -184,43 +182,47 @@ button {
   padding: 10px;
   border-bottom: 1px solid var(--navbar-backround-color);
 }
-.item.fashion ,.item.shoes ,.item.bag ,.item.watch ,.item.toy ,.item.accessories{
+.item.fashion,
+.item.shoes,
+.item.bag,
+.item.watch,
+.item.toy,
+.item.accessories {
   display: flex;
-  color:var(--black-tertiary-color) ;
+  color: var(--black-tertiary-color);
   align-items: flex-start;
   flex-direction: column;
   padding: 2px;
   border-bottom: 1px solid var(--navbar-backround-color);
 }
-.shoes-item ,.fashion-item ,.bag-item ,.watch-item ,.toy-item ,.accessories-item{
+.shoes-item,
+.fashion-item,
+.bag-item,
+.watch-item,
+.toy-item,
+.accessories-item {
   width: 80%;
   margin: 10 auto;
-
 }
-.shoes-item a,.fashion-item a,.bag-item a,.watch-item a,.toy-item a,.accessories-item a{
+.shoes-item a,
+.fashion-item a,
+.bag-item a,
+.watch-item a,
+.toy-item a,
+.accessories-item a {
   color: var(--white-secondary-color);
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
   margin-left: 10px;
 }
-.remove-menu{
+.remove-menu {
   margin-left: 95%;
   justify-content: flex-end;
   background-color: rgb(255, 238, 0);
   color: #000000;
   cursor: pointer;
-  
 }
-
-
-
-
-
-
-
-
-
 
 .campagn {
   background-color: #ffffff;
