@@ -116,7 +116,7 @@ button {
 
 /* menu category  */
 .menu-category {
-  background-color: var(--white-secondary-color);
+  background-color: var(--green-primary-color);
   /* border-bottom: .5px solid var(--navbar-backround-color); */
   margin-bottom: 1px;
   position: sticky;
@@ -134,11 +134,12 @@ button {
 .menu-icon {
   cursor: pointer;
   font-size: larger;
+  
 }
 .menu-icon:hover {
-  color: var(--green-primary-color);
   transition: none;
   border: 1px solid greenyellow;
+  color: #ffffff;
 }
 
 .menu-item {
@@ -146,19 +147,19 @@ button {
   align-items: center;
 }
 .menu-item a.active {
-  color: var(--green-primary-color);
+  color: var(--black-tertiary-color);
   transition: none;
   border-bottom: 1px solid var(--green-primary-color);
 }
 .menu-item a {
-  color: var(--menu-item-color);
+  color: var(--white-secondary-color);
   font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
   margin-left: 10px;
 }
 .menu-item a:hover {
-  color: var(--green-primary-color);
+  color: var(--dark-green-color);
   transition: none;
 }
 
