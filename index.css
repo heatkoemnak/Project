@@ -43,10 +43,6 @@ button {
   color: inherit;
   outline: none;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
 }
 .logo {
   font-weight: 700;
@@ -117,7 +113,6 @@ button {
 /* menu category  */
 .menu-category {
   background-color: var(--green-primary-color);
-  /* border-bottom: .5px solid var(--navbar-backround-color); */
   margin-bottom: 1px;
   position: sticky;
   top: 75;
@@ -134,7 +129,6 @@ button {
 .menu-icon {
   cursor: pointer;
   font-size: larger;
-  
 }
 .menu-icon:hover {
   transition: none;
@@ -323,18 +317,14 @@ span {
 }
 
 .meterail-list img {
+  margin: 0 auto;
+  display: flex;
   height: 100px;
   width: 100px;
   border-radius: 50%;
   border: 3px solid rgb(181, 175, 175);
-
   padding: 5px;
-  margin: 0 auto;
-  display: flex;
-
   transition: calc(0.5s);
-  padding: 5px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
