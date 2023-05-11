@@ -26,13 +26,13 @@ body {
 }
 
 :root {
-  --green-primary-color: rgb(154, 213, 2);
+  --green-primary-color: rgb(23, 230, 16);
   --white-secondary-color: #ffffff;
   --black-tertiary-color: #000000;
   --navbar-backround-color: #f5f5f5;
-  --yellow-text-color: #ffd900;
-  --menu-item-color: #848484;
-  --dark-green-color: #28400c;
+  --yellow-text-color: #ffff00;
+  --menu-item-color: #979595;
+  --dark-green-color: #4fd972;
 }
 li,
 a,
@@ -132,7 +132,7 @@ button {
 }
 .menu-icon:hover {
   transition: none;
-  border: 1px solid greenyellow;
+  border: 1px solid rgb(23, 230, 16);
   color: #ffffff;
 }
 
@@ -214,7 +214,7 @@ button {
 .remove-menu {
   margin-left: 95%;
   justify-content: flex-end;
-  background-color: rgb(255, 238, 0);
+  background-color:#ffff00;
   color: #000000;
   cursor: pointer;
 }
@@ -264,7 +264,7 @@ button {
   color: rgb(255, 255, 255);
 }
 .feature-list a:hover {
-  color: rgb(236, 240, 27);
+  color:#ffff00;
   transition: calc(0.4s);
 }
 
@@ -340,7 +340,7 @@ span {
   align-items: center;
   border: 1px solid rgb(181, 175, 175);
   border-radius: 50%;
-  background-color: #90d640;
+  background-color: rgb(23, 230, 16);;
   color: white;
   cursor: pointer;
 }
@@ -373,7 +373,7 @@ span {
   outline: none;
   border: none;
   border-top-right-radius: 0px;
-  background-color: #36590f;
+  background-color: rgb(23, 230, 16);;
   color: white;
   cursor: pointer;
   transition: calc(0.5s);
@@ -445,7 +445,7 @@ span {
   gap: 30px;
 }
 .footer-menu-item a:hover {
-  color: rgb(255, 145, 0);
+  color: #ffff00;
 }
 .footer-social-media {
   display: flex;
@@ -461,5 +461,5 @@ span {
   margin-bottom: 100px;
 }
 .footer-social-media a:hover {
-  color: #90d640;
+  color:  rgb(23, 230, 16);
 }

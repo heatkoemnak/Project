@@ -90,7 +90,7 @@ body{
             color: #000;
             font-weight:500;
             transform: scale(1.01);
-            background-color: #b8f317;
+            background-color: rgb(23, 230, 16);
             }
 
             /* nav bar icon */
@@ -101,7 +101,7 @@ body{
             justify-content: center;
         }
         .nav-icon a{
-            background-color: #32681b;
+            background-color: rgb(23, 230, 16);
             font-size: 20px;
             color: #ffffff;
             padding: 10px;
@@ -143,14 +143,14 @@ body{
         margin-top: 20px;
         display: inline-block;
         padding: 10px 30px;
-        border: 1px solid #f3c702;
-        color: #f3c702;
+        border: 1px solid #ffff00;
+        color: #ffff00;
         font-size: 20px;
         font-weight: 500;
 
     }.banner .banner-text i{
         vertical-align: middle;
-        color: #f3c702;
+        color: #ffff00;
         font-size: 20px;
         margin-left: 10px;
         
@@ -160,7 +160,7 @@ body{
     }
 
     .banner .banner-text a:hover{
-        background-color: #f3c702;
+        background-color: #ffff00;
         color: #f5f5f5;
         transition: all .42 ease;
     
@@ -177,7 +177,7 @@ body{
 }.Poducts h1{
     text-align: center;
     padding: 30px;
-    border-bottom: 1px solid rgb(255, 227, 47);
+    border-bottom: 1px solid #ffff00;
 
 }
 .product-container{
@@ -222,7 +222,7 @@ background-color: #ffffff;
     width: 300px;
 }
 .price i{
-    background-color: rgb(154, 204, 80);
+    background-color:  rgb(23, 230, 16);;
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
@@ -243,7 +243,7 @@ background-color: #ffffff;
 }.Service h1{
     text-align: center;
     padding: 30px;
-    border-bottom: 1px solid rgb(255, 227, 47);
+    border-bottom: 1px solid #ffff00;
 
 }.service-container{
 
