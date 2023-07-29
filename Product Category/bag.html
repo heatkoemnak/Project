@@ -25,17 +25,21 @@
   <body>
     <h3 class="header">RECYCLING WEBSITE</h3>
     <nav class="nav-bar" id="mynav-bar">
-      <h1 class="logo">Anti WastE</h1>
+      <h1 class="logo">
+        <img src="../asset/myanti.png" alt="" width="150">
+      </h1>
       <div class="nav-menu">
-        <li><a href="/index.html" class="item">Home</a></li>
+        <ul class="flex">
+          <li><a href="home.html" class="item">HOME</a></li>
         <li>
-          <a href="service.html" class="item">Services</a>
+          <a href="#Service" onclick="Service()" class="item">SERVICES</a>
         </li>
-        <li><a href="shop.html" class="item">Shop</a></li>
+        <li><a href="#product" onclick="Product()" class="item">SHOP</a></li>
         <li>
-          <a herf="contact.html" class="item">Contact us</a>
+          <a herf="#contact" onclick="contact()" class="item">CONTACT US</a>
         </li>
-        <li><a herf="team.html" class="item">Team</a></li>
+        <li><a herf="#team" onclick="Team()" class="item">OUR TEAM</a></li>
+        </ul>
       </div>
       <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
@@ -43,14 +47,12 @@
         <i class="bx bxs-cart-alt" id="shopping-cart"
           ><span class="cart-quantity" id="cart-quantity">1</span></i
         >
-
+  
         <div class="sign-account">
           <div class="log-to-signin">
-            <p>Hello👋</p>
-            <a href="#" class="login" id="cta">Sign In </a>
-          </div>
-          <p>Account</p>
-        </div>
+            
+            <a href="#" class="login" id="cta"> Sign In💁🏻‍♀️ </a>
+            
       </div>
     </nav>
     <div class="container active" id="form">

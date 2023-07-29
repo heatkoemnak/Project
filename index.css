@@ -68,7 +68,7 @@ button {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   background-color: var(--navbar-backround-color);
 }
-.nav-menu {
+.nav-menu ul{
   display: flex;
 }
 .nav-menu li {
