@@ -98,14 +98,20 @@ body {
 }
 
 /* nav bar icon */
-.nav-icon {
+.nav-icon-home {
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: center;
 }
-.nav-icon .
-.nav-icon a {
+.nav-icon-home > input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 13px;
+  margin-right: 10px;
+}
+.nav-icon-home a {
   background-color: rgb(198, 208, 197);
   font-size: 20px;
   color: #037e0f;
@@ -117,7 +123,7 @@ body {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.nav-icon a:hover {
+.nav-icon-home a:hover {
   transform: scale(1.1);
   transition: all 0.42 ease;
 }

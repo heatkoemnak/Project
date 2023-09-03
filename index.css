@@ -90,7 +90,7 @@ button {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.bx-search {
+.nav-search .bx-search {
   color: #ffdd00;
   margin-right: 15px;
   background-color: #262603;
