@@ -93,6 +93,8 @@ button {
 .bx-search {
   color: #ffdd00;
   margin-right: 15px;
+  background-color: #262603;
+  padding: 13px;
 }
 
 .nav-icon {
@@ -101,7 +103,13 @@ button {
   align-items: center;
   justify-content: center;
 }
-
+.nav-icon > input {
+  border: none;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  margin-right: 10px;
+}
 .nav-icon #shopping-cart {
   font-size: 1.5rem;
   border-radius: 3px;

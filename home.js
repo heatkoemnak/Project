@@ -13,6 +13,20 @@ function menu() {
   menu.style.textAlign = 'left';
   menu.style.margin = '10px';
 }
+const OpenSearch = document.querySelector('#search-home-icon');
+const InputSearch = document.querySelector('#input-search');
+const CloseSearch = document.querySelector('#close-search');
+OpenSearch.onclick = () => {
+  InputSearch.style.display = 'block';
+  OpenSearch.style.display = 'none';
+  CloseSearch.style.display = 'block';
+};
+CloseSearch.onclick = () => {
+  InputSearch.style.display = 'none';
+  OpenSearch.style.display = 'block';
+  CloseSearch.style.display = 'none';
+};
+
 function back() {
   window.open('home.html');
 }
