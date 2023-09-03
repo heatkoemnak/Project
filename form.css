@@ -9,6 +9,10 @@
   align-items: center;
   flex-direction: column;
   padding: 5px;
+  background-color: #258428;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 70px;
 }
 .sign-account:hover {
   border: 1px solid gray;
@@ -18,13 +22,16 @@
 }
 .log-to-signin {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
 }
 .log-to-signin p {
-  font-size: 11px;
+  font-size: 14px;
   color: #333;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font: 1em sans-serif;
+  font-weight: 400;
+  margin-right: 5px;
 }
 
 /* < Close Form > */
@@ -316,7 +323,7 @@ input:focus {
   font-weight: 400;
   margin-right: 5px;
   cursor: pointer;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 .bx-arrow-back:hover {
   color: #15b5f4;

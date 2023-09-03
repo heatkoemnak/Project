@@ -1,74 +1,35 @@
-h2{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.title-header {
+  font-size: 2rem;
+  font-weight: 600;
   text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: 'Jost', sans-serif;
-  color: #000000;
-  padding: 0 20px;
-  margin: 0 auto;
-  width: 85%;
-  border-bottom: 3px solid rgb(23, 230, 16);
+  margin: 2rem 0;
 }
-.bx{
-  background-color: beige;
-  font-size: 30px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.wrap{
+.wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 30 auto;
-  width:90%;
-  gap: 20px;
- 
-  
-
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-
-  
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(27, 31, 35, 0.04) 2px 5px 0px,
+    rgba(255, 255, 255, 0.25) 2px 5px 0px inset;
 }
-.card h1{
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid rgb(255, 227, 47);
-}
-img{
-  width: 200px;
- 
-  object-fit:cover;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
+img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  object-fit: contain;
 }

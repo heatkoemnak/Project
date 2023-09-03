@@ -23,36 +23,28 @@
     <script src="/Shopping Card/shopping-cart.js" defer></script>
   </head>
   <body>
-    <h3 class="header">RECYCLING WEBSITE</h3>
-    <nav class="nav-bar" id="mynav-bar">
-      <h1 class="logo">Anti WastE</h1>
-      <div class="nav-menu">
-        <li><a href="/index.html" class="item">Home</a></li>
-        <li>
-          <a href="service.html" class="item">Services</a>
-        </li>
-        <li><a href="shop.html" class="item">Shop</a></li>
-        <li>
-          <a herf="contact.html" class="item">Contact us</a>
-        </li>
-        <li><a herf="team.html" class="item">Team</a></li>
-      </div>
-      <!-- nav icon  -->
-      <div class="nav-icon" id="nav-icon">
-        <i class="bx bx-search btn-search" id="search"></i>
-        <i class="bx bxs-cart-alt" id="shopping-cart"
-          ><span class="cart-quantity" id="cart-quantity">1</span></i
-        >
-
-        <div class="sign-account">
-          <div class="log-to-signin">
-            <p>Hello👋</p>
-            <a href="#" class="login" id="cta">Sign In </a>
-          </div>
-          <p>Account</p>
+    <!-- navigation bar -->
+    <div class="nav-main">
+      <nav class="nav-bar" id="mynav-bar">
+        <div class="logo">
+          <a href="home.html" class="item" >
+            <img src="../asset/anti_logo.png" alt="" width="120">
+          </a>
         </div>
-      </div>
-    </nav>
+        <div class="nav-search">
+          <input type="text" placeholder="search">
+          <i class="bx bx-search"></i>
+          <p class="search">Search</p>
+        </div>
+        <!-- nav icon  -->
+        <div class="nav-icon" id="nav-icon">
+          <i class='bx bx-cart'id="shopping-cart" ></i>
+            <span class="cart-quantity" id="cart-quantity">1</span></i>
+          <div class="sign-account">
+            <a href="#" id="cta"> Login</a>
+        </div>
+      </nav>
+    </div>
     <div class="container active" id="form">
       <i class="bx bx-x close-form" id="close"></i>
       <div class="login-content" id="sign-in">
@@ -203,20 +195,15 @@
       </div>
     </div>
 
-    <div class="search-product">
-      <input type="text" placeholder="Search Product" />
-      <button class="search-btn">Search</button>
-    </div>
-
     <!-- banner of bags -->
-    <div class="Popular" id="popular">
+    <!-- <div class="Popular" id="popular">
       <div class="popular-text">
         <div class="products-type">
           <a class="active" href="#">Watch Products</a>
         </div>
         <a class="seemore" href="#">See more</a>
       </div>
-    </div>
+    </div> -->
 
     <!-- product  -->
 

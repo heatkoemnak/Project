@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anti WastE</title>
-    <link rel="icon" href="asset/bottle.png" />
+    <link rel="icon" href="asset/anti_logo.png" />
 
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://www.flaticon.com/uicons" />
@@ -28,43 +28,29 @@
     <script src="form.js" defer></script>
   </head>
   <body>
-    <h3 class="header">RECYCLING WEBSITE</h3>
-
-    <!-- navagation bar -->
-
-    <nav class="nav-bar" id="mynav-bar">
-      <h1 class="logo">
-        <img src="./asset/myanti.png" alt="" width="150">
-      </h1>
-      <div class="nav-menu">
-        <ul class="flex">
-          <li><a href="home.html" class="item">HOME</a></li>
-        <li>
-          <a href="#Service" onclick="Service()" class="item">SERVICES</a>
-        </li>
-        <li><a href="#product" onclick="Product()" class="item">SHOP</a></li>
-        <li>
-          <a herf="#contact" onclick="contact()" class="item">CONTACT US</a>
-        </li>
-        <li><a herf="#team" onclick="Team()" class="item">OUR TEAM</a></li>
-        </ul>
-        
-      </div>
-      <!-- nav icon  -->
-      <div class="nav-icon" id="nav-icon">
-        <i class="bx bx-search btn-search" id="search"></i>
-        <i class="bx bxs-cart-alt" id="shopping-cart"
-          ><span class="cart-quantity" id="cart-quantity">1</span></i
-        >
-
-        <div class="sign-account">
-          <div class="log-to-signin">
-            
-            <a href="#" class="login" id="cta"> Sign In</a>
-            <a href="#" class="login" id="cta"> Sign Up</a>
-            
-      </div>
-    </nav>
+    <!-- navigation bar -->
+    <div class="nav-main">
+      <nav class="nav-bar" id="mynav-bar">
+        <div class="logo">
+          <a href="home.html" class="item" >
+            <img src="./asset/anti_logo.png" alt="" width="120">
+          </a>
+        </div>
+        <div class="nav-search">
+          <input type="text" placeholder="search">
+          <i class="bx bx-search"></i>
+          <p class="search">Search</p>
+        </div>
+        <!-- nav icon  -->
+        <div class="nav-icon" id="nav-icon">
+          <i class='bx bx-cart'id="shopping-cart" ></i>
+            <span class="cart-quantity" id="cart-quantity">1</span></i>
+          <div class="sign-account">
+            <a href="#" id="cta"> Login</a>
+        </div>
+      </nav>
+    </div>
+    
     <!--nav icon end-->
 
     <!-- menu category  -->
@@ -318,11 +304,6 @@
     </div>
 
     <!-- close slid type -->
-
-    <div class="search-product">
-      <input type="text" placeholder="Search Product" />
-      <button class="search-btn">Search</button>
-    </div>
 
     <!-- popular product -->
     <div class="Popular" id="popular">

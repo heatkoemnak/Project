@@ -23,38 +23,28 @@
     <script src="/Shopping Card/shopping-cart.js" defer></script>
   </head>
   <body>
-    <h3 class="header">RECYCLING WEBSITE</h3>
+    <!-- navigation bar -->
+   <div class="nav-main">
     <nav class="nav-bar" id="mynav-bar">
-      <h1 class="logo">
-        <img src="../asset/myanti.png" alt="" width="150">
-      </h1>
-      <div class="nav-menu">
-        <ul class="flex">
-          <li><a href="home.html" class="item">HOME</a></li>
-        <li>
-          <a href="#Service" onclick="Service()" class="item">SERVICES</a>
-        </li>
-        <li><a href="#product" onclick="Product()" class="item">SHOP</a></li>
-        <li>
-          <a herf="#contact" onclick="contact()" class="item">CONTACT US</a>
-        </li>
-        <li><a herf="#team" onclick="Team()" class="item">OUR TEAM</a></li>
-        </ul>
+      <div class="logo">
+        <a href="home.html" class="item" >
+          <img src="../asset/anti_logo.png" alt="" width="120">
+        </a>
+      </div>
+      <div class="nav-search">
+        <input type="text" placeholder="search">
+        <i class="bx bx-search"></i>
+        <p class="search">Search</p>
       </div>
       <!-- nav icon  -->
       <div class="nav-icon" id="nav-icon">
-        <i class="bx bx-search btn-search" id="search"></i>
-        <i class="bx bxs-cart-alt" id="shopping-cart"
-          ><span class="cart-quantity" id="cart-quantity">1</span></i
-        >
-  
+        <i class='bx bx-cart'id="shopping-cart" ></i>
+          <span class="cart-quantity" id="cart-quantity">1</span></i>
         <div class="sign-account">
-          <div class="log-to-signin">
-            
-            <a href="#" class="login" id="cta"> Sign In💁🏻‍♀️ </a>
-            
+          <a href="#" id="cta"> Login</a>
       </div>
     </nav>
+  </div>
     <div class="container active" id="form">
       <i class="bx bx-x close-form" id="close"></i>
       <div class="login-content" id="sign-in">
@@ -206,22 +196,15 @@
       </div>
     </div>
 
-    <!-- search product  -->
-
-    <div class="search-product">
-      <input type="text" placeholder="Search Product" />
-      <button class="search-btn">Search</button>
-    </div>
-
     <!-- banner of bags -->
-    <div class="Popular" id="popular">
+    <!-- <div class="Popular" id="popular">
       <div class="popular-text">
         <div class="products-type">
           <a class="active" href="#">Bag Products</a>
         </div>
         <a class="seemore" href="#">See more</a>
       </div>
-    </div>
+    </div> -->
 
     <!-- product  -->
 

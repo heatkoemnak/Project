@@ -1,319 +1,257 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
 
     <link rel="stylesheet" href="https://www.flaticon.com/uicons" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,600&family=Nunito+Sans&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="home.css">
-
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,600&family=Nunito+Sans&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
     <div class="container" id="home">
-        <div class="navbar">
-            <h1 class="logo">
-                <img src="./asset/myanti_for_homepage_white.png" alt="" width="200">
-
-            </h1>
-            <ul id="Menu-Items">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#product" onclick="product()">PRODUCTS</a></li>
-                <li><a href="#Service">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="team.html">TEAM</a></li>
-            </ul>
-            <nav class="nav-icon">
-                <a href="#"><i class='bx bx-search'></i></a>
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                <a href="account.html"><i class="fas fa-user"></i></a>
-                <a href="#"><i class='bx bx-menu'id="menu" onclick="menu()"></i></a>
-                
-            </nav>
+      <div class="navbar">
+        <h1 class="logo">
+          <img src="./asset/anti_logo.png" alt="" width="120" />
+        </h1>
+        <ul id="Menu-Items">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#product" onclick="product()">PRODUCTS</a></li>
+          <li><a href="#Service">SERVICES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="team.html">TEAM</a></li>
+        </ul>
+        <nav class="nav-icon">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="account.html"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="bx bx-menu" id="menu" onclick="menu()"></i></a>
+        </nav>
+      </div>
+      <div class="banner">
+        <div class="banner-text">
+          <h1>We SELL</h1>
+          <h1>BUY</h1>
+          <h1>and RECYCLE</h1>
+          <h1>Join With Us</h1>
+          <h1>to Protect The Environment</h1>
+          <p style="font-size: large">
+            Our mission is to promote responsible consumption and production of
+            recycled materials by providing affordable products at fair prices.
+          </p>
+          <a href="index.html" class="btn"
+            >Shop Now<i class="bx bx-right-arrow-alt"></i
+          ></a>
         </div>
-        <div class="banner">
-            <div class="banner-text">
-                <h1>We Reduce, Reuse ,Recycle to Protect The Environment </h1>
-                <p style="font-size: large;">Our mission is to promote responsible consumption and production
-                    of recycled materials by providing affordable products at fair prices.</p>
-                <a href="index.html" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
-                
-            </div>
-        </div>
+      </div>
     </div>
     <div class="Poducts" id="product">
-        <h1>OUR PRODUCTS</h1>
-        <div class="product-container">
-            <div class="row">
-                <img src="./asset/clothes1.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-                
+      <h1>OUR PRODUCTS</h1>
+      <div class="product-container">
+        <div class="row">
+          <img src="./asset/clothes1.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
             </div>
-            <div class="row">
-                <img src="asset/clothes2.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes3.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes4.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes4.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes5.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes6.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-
-
-                </div>
-            </div>
-            <div class="row">
-                <img src="asset/clothes7.jpg" alt="">
-                <div class="product-text">
-                    <h3>Name-1</h3>
-                    <div class="star">
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bx-star'></i>
-                    <i class='bx bxs-star-half' ></i>
-                    </div>
-
-                </div>
-                <div class="price">
-                    <h3>Rs. 1000</h3>
-                    <i class='bx bx-shopping-bag'></i>
-                </div>
-            </div>
-
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
         </div>
+        <div class="row">
+          <img src="asset/clothes2.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes3.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes4.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes4.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes5.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes6.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="row">
+          <img src="asset/clothes7.jpg" alt="" />
+          <div class="product-text">
+            <h3>Name-1</h3>
+            <div class="star">
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bx-star"></i>
+              <i class="bx bxs-star-half"></i>
+            </div>
+          </div>
+          <div class="price">
+            <h3>Rs. 1000</h3>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- our service -->
     <div class="Service" id="Service">
-        <h1>OUR SERVICES</h1>
-        <div class="service-container">
-            <div class="service-row">
-                <img src="asset/recycle.jpg" alt="">
-                <div class="product-text">
-                    <h3>RECYCLING</h3>
-                    
-
-                </div>
-                <div class="price">
-                    <h3>Recycling is the process of converting waste materials into new
-                        materials and objects. It is an alternative to "conventional"
-                        waste disposal that can save material and help lower greenhouse
-                        gas emissions.</h3>
-  
-                </div>
-                
-            </div>
-            <div class="service-row">
-                <img src="asset/reuse.jpg" alt="">
-                <div class="product-text">
-                    <h3>REUSE</h3>
-                    
-
-                </div>
-                <div class="price">
-                    <h3>Reusing means to use something again for the same purpose. It is
-                        one of the three R's of sustainability. Reusing is an alternative
-                        to "conventional" waste disposal that can save material and help
-                        lower greenhouse gas emissions.</h3>
-
-                </div>
-            </div>
-            <div class="service-row">
-                <img src="asset/repair.jpg" alt="">
-                <div class="product-text">
-                    <h3>REPAIR</h3>
-                    
-
-                </div>
-                <div class="price">
-                    <h3>Repairing is the process of fixing or improving something that is
-                        broken or damaged. It is one of the three R's of sustainability.
-                        Repairing is an alternative to "conventional" waste disposal that
-                        can save material and help lower greenhouse gas emissions.</h3>
-                </div>
-            </div>
-            <div class="service-row">
-                <img src="asset/donate.jpg" alt="">
-                <div class="product-text">
-                    <h3>DUNATE</h3>
-                    
-
-                </div>
-                <div class="price">
-                    <h3>Donate is the process of giving something to someone in need. It is
-                        an alternative to "conventional" waste disposal that can save
-                        material and help lower greenhouse gas emissions.</h3>
-                </div>
-            </div>
-            <div class="service-row">
-                <img src="asset/buy.jpg" alt="">
-                <div class="product-text">
-                    <h3>BUY</h3>
-                </div>
-                <div class="price">
-                    <h3>Buy is the process of giving something to someone in need. It is
-                        an alternative to "conventional" waste disposal that can save
-                        material and help lower greenhouse gas emissions.</h3>
-                </div>
-            </div>
-            <div class="service-row">
-                <img src="asset/sell.jpg" alt="">
-                <div class="product-text">
-                    <h3>SELL</h3>
-                    
-
-                </div>
-                <div class="price">
-                    <h3>Sell is the process of giving something to someone in need. It is
-                        an alternative to "conventional" waste disposal that can save
-                        material and help lower greenhouse gas emissions.
-                    </h3>
-                </div>
-            </div>
-            
-
+      <h1>OUR FEATURES</h1>
+      <div class="service-container">
+        <div class="service-row">
+          <img src="asset/buy.jpg" alt="" />
+          <div class="product-text">
+            <h3>BUY</h3>
+          </div>
+          <div class="price">
+            <h3>
+              Buy is the process of giving something to someone in need. It is
+              an alternative to "conventional" waste disposal that can save
+              material and help lower greenhouse gas emissions.
+            </h3>
+          </div>
         </div>
-
+        <div class="service-row">
+          <img src="asset/sell.jpg" alt="" />
+          <div class="product-text">
+            <h3>SELL</h3>
+          </div>
+          <div class="price">
+            <h3>
+              Sell is the process of giving something to someone in need. It is
+              an alternative to "conventional" waste disposal that can save
+              material and help lower greenhouse gas emissions.
+            </h3>
+          </div>
+        </div>
+        <div class="service-row">
+          <img src="asset/recycle.jpg" alt="" />
+          <div class="product-text">
+            <h3>RECYCLING</h3>
+          </div>
+          <div class="price">
+            <h3>
+              Recycling is the process of converting waste materials into new
+              materials and objects. It is an alternative to "conventional"
+              waste disposal that can save material and help lower greenhouse
+              gas emissions.
+            </h3>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer">
-        
-
-    </div>
-
-
+    <div class="footer"></div>
 
     <script src="home.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    
-</body>
+  </body>
 </html>
