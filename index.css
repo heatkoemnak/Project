@@ -80,15 +80,15 @@ button {
   align-items: center;
   background-color: darkgreen;
   border-radius: 25px;
-  padding: 5px;
+  padding: 4px;
 }
 .nav-search > input {
   width: 90%;
-  padding: 10px;
+  padding: 13px;
   outline: none;
   border: none;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 .nav-search .bx-search {
   color: #ffdd00;
