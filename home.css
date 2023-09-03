@@ -126,17 +126,31 @@ body {
   justify-content: center;
   height: 90%;
   width: 70%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 .banner-text {
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.wrap-promote-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.promote-text {
+  display: flex;
+  gap: 20px;
 }
 .banner-text h1 {
   font-style: oblique;
   color: #ffffff;
   font-size: 50px;
   font-weight: 700;
-  font-family: 'Trebuchet MS';
 }
 .banner-text p {
   cursor: text;
@@ -266,6 +280,9 @@ body {
   text-align: center;
   padding: 30px;
   border-bottom: 1px solid #ffff00;
+}
+textarea {
+  width: 400px;
 }
 .send {
   margin-top: 20px;
