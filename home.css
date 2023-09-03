@@ -5,9 +5,25 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
+}
+.login-home-btn {
+  background-color: rgb(30, 135, 20);
+  color: #ffffff;
+  width: 100px;
+  padding: 5.5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.42 ease;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 body {
   background-color: #f5f5f5;
@@ -89,12 +105,16 @@ body {
   justify-content: center;
 }
 .nav-icon a {
-  background-color: rgb(23, 230, 16);
+  background-color: rgb(198, 208, 197);
   font-size: 20px;
-  color: #ffffff;
+  color: #037e0f;
   padding: 10px;
   margin-right: 10px;
   border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .nav-icon a:hover {
   transform: scale(1.1);
@@ -106,7 +126,7 @@ body {
   justify-content: center;
   height: 90%;
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 .banner-text {
   padding: 30px;
@@ -132,6 +152,7 @@ body {
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
+  background: #262603;
 }
 .banner .banner-text i {
   vertical-align: middle;
@@ -145,72 +166,145 @@ body {
 }
 
 .banner .banner-text a:hover {
-  background-color: #262603;
+  background-color: #484802;
   color: #f5f5f5;
   transition: all 0.42 ease;
 }
-.Poducts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
-
-  margin: auto;
-  width: 100%;
+/* contact */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
 }
-.Poducts h1 {
+.contact h1 {
   text-align: center;
   padding: 30px;
   border-bottom: 1px solid #ffff00;
 }
-.product-container {
+.contact .contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
   margin: 20 auto;
-  gap: 20px;
+  width: 100%;
 }
-.row {
+.contact .contact-row {
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
+  align-items: center;
   gap: 5px;
+  width: 50%;
+  height: 650px;
 }
-.row img {
-  width: 300px;
+.contact .contact-row img {
+  width: 400px;
   height: 350px;
 }
-.row img:hover {
+.contact .contact-row img:hover {
   transform: scale(1.01);
   transition: all 0.42 ease;
 }
-.product-text {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.5rem;
+.contact .contact-row h1 {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid #ffff00;
 }
-.price {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.5rem;
-  width: 300px;
+.contact .contact-row p {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid #ffff00;
 }
-.price i {
-  background-color: rgb(23, 230, 16);
+.contact .contact-row .contact-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 20px;
-  padding: 5px;
-  position: relative;
-  right: -3px;
-  top: -5px;
+  font-weight: 500;
+  background: #262603;
 }
+.contact .contact-row .contact-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.42 ease;
+}
+.contact .contact-row .contact-btn i {
+  vertical-align: middle;
+  color: #ffff00;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.contact .contact-row .contact-btn i:hover {
+  color: #ffffff;
+  transition: all 0.42 ease;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.contact-form > form {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 90%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+.contact-form > form h1 {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid #ffff00;
+}
+.send {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background: #262603;
+}
+.contact-form > form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form > form input:focus {
+  border: 1px solid #037e0f;
+}
+.p-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Trebuchet MS';
+}
+
 /* our service */
 .Service {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
-
-  margin: auto;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
 }
 .Service h1 {
   text-align: center;

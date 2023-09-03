@@ -24,6 +24,8 @@
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="team.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container" id="home">
@@ -34,15 +36,14 @@
         <ul id="Menu-Items">
           <li><a href="#home">HOME</a></li>
           <li><a href="#product" onclick="product()">PRODUCTS</a></li>
-          <li><a href="#Service">SERVICES</a></li>
+          <li><a href="#Service">FEATURES</a></li>
           <li><a href="contact.html">CONTACT</a></li>
           <li><a href="team.html">TEAM</a></li>
         </ul>
         <nav class="nav-icon">
           <a href="#"><i class="bx bx-search"></i></a>
           <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-          <a href="account.html"><i class="fas fa-user"></i></a>
-          <a href="#"><i class="bx bx-menu" id="menu" onclick="menu()"></i></a>
+          <button class="login-home-btn">Login</button>
         </nav>
       </div>
       <div class="banner">
@@ -62,147 +63,7 @@
         </div>
       </div>
     </div>
-    <div class="Poducts" id="product">
-      <h1>OUR PRODUCTS</h1>
-      <div class="product-container">
-        <div class="row">
-          <img src="./asset/clothes1.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes2.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes3.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes4.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes4.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes5.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes6.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-        <div class="row">
-          <img src="asset/clothes7.jpg" alt="" />
-          <div class="product-text">
-            <h3>Name-1</h3>
-            <div class="star">
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bx-star"></i>
-              <i class="bx bxs-star-half"></i>
-            </div>
-          </div>
-          <div class="price">
-            <h3>Rs. 1000</h3>
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- our service -->
     <div class="Service" id="Service">
       <h1>OUR FEATURES</h1>
@@ -249,7 +110,190 @@
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <h2 class="title-header">TEAM PROJECT</h2>
+    <div class="main-container">
+      <div class="wrap">
+        <div class="card">
+          <img src="asset/sodana.png" alt="John" />
+          <div class="cart-info">
+            <h2>Som Sodana</h2>
+            <p>Role</p>
+            <p class="title">Front End</p>
+            <p>Royal University of Phnom Penh</p>
+            <div>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <button>Contact</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="asset/soumany.jpg" alt="John" />
+          <div class="cart-info">
+            <h2>Sou Many</h2>
+            <p>Role</p>
+            <p class="title">UX/UI Designer</p>
+            <p>Royal University of Phnom Penh</p>
+            <div>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <button>Contact</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="asset/sopheak.jpg" alt="John" />
+          <div class="cart-info">
+            <h2>Saing Sopheak</h2>
+            <p>Role</p>
+            <p class="title">Idea Proposer & Back-End</p>
+            <p>Royal University of Phnom Penh</p>
+            <div>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <button>Contact</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="asset/koemnak.jpg" alt="John" />
+          <div class="cart-info">
+            <h2>Heat Koemnak</h2>
+            <p>Role</p>
+            <p class="title">Back End & Database Server</p>
+            <p>Royal University of Phnom Penh</p>
+            <div>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <button>Contact</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="asset/chaylin.jpg" alt="John" />
+          <div class="cart-info">
+            <h2>Srun Chhaylin</h2>
+            <p>Role</p>
+            <p class="title">Tester</p>
+            <p>Royal University of Phnom Penh</p>
+            <div>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <button>Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h1>CONTACT</h1>
+      <p class="p-text">
+        If you have any questions, please feel free to contact us, our customer
+        service center is working for you 24/7.
+      </p>
+      <div class="contact-container">
+        <div class="contact-row">
+          <div class="contact-col">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h2>Address</h2>
+              <p>Phnom Penh, Cambodia</p>
+            </div>
+          </div>
+          <div class="contact-col">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h2>Phone</h2>
+              <p>+855 977 304 279</p>
+            </div>
+          </div>
+          <div class="contact-col">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h2>Email</h2>
+              <p>heatkimnak@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <label>username</label>
+            <input type="text" placeholder="Enter your name" />
+            <label>email</label>
+            <input type="email" placeholder="Enter your email" />
+            <label>subject</label>
+            <input type="text" placeholder="Enter your subject" />
+            <label>message</label>
+            <textarea rows="8" placeholder="Message"></textarea>
+            <button class="send">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Contact Info</h2>
+            <a href="#">+855 977 304 279</a>
+            <a href="#">heatkoemnak@gamil.com</a>
+            <a href="#">Pnom penh,Cambodia-400104</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Follow Us</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+            <a href="#">Linkedin</a>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Legal</h2>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+        <div class="footer-social-media">
+          <a href="#">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="home.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
